@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from convertir import CHEMINS
 
 # Pages modifiées volontairement après la migration : leurs écarts ne sont pas des erreurs.
-VOULUS = {'contact': 'formulaire envoyé par Web3Forms au lieu de WPForms'}
+VOULUS = {'contact': 'formulaire envoyé par Web3Forms au lieu de WPForms', '404': 'nouvelle page 404'}
 
 ecarts = 0
 for nom, chemin in CHEMINS.items():
