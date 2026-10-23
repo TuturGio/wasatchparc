@@ -10,9 +10,9 @@ tools/verifier.py contrôle ensuite que le rendu PHP redonne chaque page nettoy�
 Une fois le site repris à la main, ne plus relancer ce script : il écraserait les modifications.
 
 Usage (depuis la racine du projet) :
-    python3 -I tools/convertir.py
+    python3 -I tools/convertir.py [nom …]    (par défaut toutes les pages ; noms : clés de CHEMINS)
 """
-import os, re
+import os, re, sys
 
 PROJ = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 PROPRE = os.path.join(PROJ, '.cache', 'propre')
@@ -24,6 +24,7 @@ CHEMINS = {
     '5-amazing-benefits-of-winter-sports': '/5-amazing-benefits-of-winter-sports/',
     'how-safe-is-snow-tubing': '/how-safe-is-snow-tubing/',
     'what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity': '/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity/',
+    '404': '/404.html',
 }
 DEBUT_PRIMARY = '<div id="primary" class="content-area primary">'
 FIN_PRIMARY = '\t</div><!-- #primary -->'
@@ -33,7 +34,7 @@ HAUT = {
     'seo': r'(\t<title>.*?<!-- All in One SEO -->\n)',
     'astra': r"<style id='astra-theme-css-inline-css'>\n(.*?)</style>",
     'styles': r"<link rel='stylesheet' id='theme\.css-css'[^\n]*\n(.*?)<!--\[if IE\]>",
-    'uag': r'<style id="uagb-style-conditional-extension">(.*?)</style><link rel="icon"',
+    'uag': r'(<style id="uagb-style-conditional-extension">.*?</style>)?<link rel="icon"',
     'corps': r"(<body itemtype='[^']*' itemscope='itemscope' class=\"[^\"]*\">)",
 }
 BAS = {
@@ -45,7 +46,7 @@ PHP = {
     'seo': "<?= $page['seo'] ?>",
     'astra': "<?php readfile(__DIR__ . '/styles/astra-' . $page['mise_en_page'] . '.css') ?>",
     'styles': "<?= $page['styles'] ?? '' ?>",
-    'uag': "<?= $page['uag'] ?>",
+    'uag': "<?php if (isset($page['uag'])): ?><style id=\"uagb-style-conditional-extension\"><?= $page['uag'] ?></style><?php endif ?>",
     'corps': "<body itemtype='<?= $page['itemtype'] ?>' itemscope='itemscope' class=\"<?= $page['classes'] ?>\">",
     'styles_bas': "<?= $page['styles_bas'] ?? '' ?>",
     'scripts': "<?= $page['scripts'] ?? '' ?>",
@@ -66,7 +67,7 @@ def valeur(texte, motif):
     m = re.search(motif, texte, re.S)
     if not m:
         raise SystemExit(f'Motif introuvable : {motif}')
-    return m.group(1)
+    return m.group(1) or ''
 
 
 def mise_en_page(classes):
@@ -77,6 +78,8 @@ def mise_en_page(classes):
         return 'article'
     if 'archive' in classes:
         return 'archive'
+    if 'error404' in classes:
+        return '404'
     return 'page'
 
 
@@ -96,7 +99,10 @@ def decouper(h):
 
 def main():
     os.makedirs(os.path.join(PROJ, 'includes', 'styles'), exist_ok=True)
+    noms = sys.argv[1:] or list(CHEMINS)
     for nom, chemin in CHEMINS.items():
+        if nom not in noms:
+            continue
         h = open(os.path.join(PROPRE, nom + '.html'), encoding='utf-8').read()
         haut, contenu, bas = decouper(h)
         corps = valeur(haut, HAUT['corps'])
@@ -108,7 +114,7 @@ def main():
             'styles': valeur(haut, HAUT['styles']),
             'itemtype': itemtype,
             'classes': classes,
-            'uag': valeur(haut, HAUT['uag']),
+            'uag': (valeur(haut, HAUT['uag']) or '')[len('<style id="uagb-style-conditional-extension">'):-len('</style>')],
             'entete_transparent': 'ast-theme-transparent-header' in classes.split(),
             'styles_bas': valeur(bas, BAS['styles_bas']),
             'scripts': valeur(bas, BAS['scripts']),
@@ -122,12 +128,12 @@ def main():
 
         lignes = ['<?php', '$page = [']
         for cle, v in page.items():
-            if v == '' and cle in ('styles', 'styles_bas', 'scripts'):
+            if v == '' and cle in ('styles', 'uag', 'styles_bas', 'scripts'):
                 continue
             lignes.append(f"    '{cle}' => " + ('true' if v is True else 'false' if v is False else php_chaine(v)) + ',')
         lignes.append('];')
         lignes.append('?>\n')
-        dest = os.path.join(PROJ, 'content', ('accueil' if chemin == '/' else chemin.strip('/')) + '.php')
+        dest = os.path.join(PROJ, 'content', ('accueil' if chemin == '/' else chemin.strip('/').removesuffix('.html')) + '.php')
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         open(dest, 'w', encoding='utf-8').write('\n'.join(lignes) + contenu)
         print(dest[len(PROJ) + 1:])

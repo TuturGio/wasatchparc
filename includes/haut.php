@@ -59,7 +59,7 @@ var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"pl
 var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wasatchparc.com\/wp-admin\/admin-ajax.php","nonce":"b26f2f6594"};
 </script>
 <script src="/wp-content/plugins/popup-builder/public/js/PopupBuilder.js?ver=4.3.6" id="PopupBuilder.js-js"></script>
-<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style id="uagb-style-conditional-extension"><?= $page['uag'] ?></style><link rel="icon" href="/wp-content/uploads/2024/12/cropped-cropped-favicon-1-32x32.jpg" sizes="32x32" />
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><?php if (isset($page['uag'])): ?><style id="uagb-style-conditional-extension"><?= $page['uag'] ?></style><?php endif ?><link rel="icon" href="/wp-content/uploads/2024/12/cropped-cropped-favicon-1-32x32.jpg" sizes="32x32" />
 <link rel="icon" href="/wp-content/uploads/2024/12/cropped-cropped-favicon-1-192x192.jpg" sizes="192x192" />
 <link rel="apple-touch-icon" href="/wp-content/uploads/2024/12/cropped-cropped-favicon-1-180x180.jpg" />
 <meta name="msapplication-TileImage" content="/wp-content/uploads/2024/12/cropped-cropped-favicon-1-270x270.jpg" />

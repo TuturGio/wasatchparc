@@ -48,35 +48,11 @@ HTML,
 <script src="/wp-content/plugins/wpforms-lite/assets/lib/punycode.min.js?ver=1.0.0" id="wpforms-punycode-js"></script>
 <script src="/wp-content/plugins/wpforms-lite/assets/js/share/utils.min.js?ver=1.9.4.1" id="wpforms-generic-utils-js"></script>
 <script src="/wp-content/plugins/wpforms-lite/assets/js/frontend/wpforms.min.js?ver=1.9.4.1" id="wpforms-js"></script>
-<script src="https://www.google.com/recaptcha/api.js?onload=wpformsRecaptchaLoad&amp;render=explicit" id="wpforms-recaptcha-js"></script>
-<script id="wpforms-recaptcha-js-after">
-var wpformsDispatchEvent = function (el, ev, custom) {
-				var e = document.createEvent(custom ? "CustomEvent" : "HTMLEvents");
-				custom ? e.initCustomEvent(ev, true, true, false) : e.initEvent(ev, true, true);
-				el.dispatchEvent(e);
-			};
-		var wpformsRecaptchaCallback = function (el) {
-				var hdn = el.parentNode.querySelector(".wpforms-recaptcha-hidden");
-				var err = el.parentNode.querySelector("#g-recaptcha-hidden-error");
-				hdn.value = "1";
-				wpformsDispatchEvent(hdn, "change", false);
-				hdn.classList.remove("wpforms-error");
-				err && hdn.parentNode.removeChild(err);
-			};
-		var wpformsRecaptchaLoad = function () {
-					Array.prototype.forEach.call(document.querySelectorAll(".g-recaptcha"), function (el) {
-						try {
-							var recaptchaID = grecaptcha.render(el, {
-								callback: function () {
-									wpformsRecaptchaCallback(el);
-								}
-							});
-							el.setAttribute("data-recaptcha-id", recaptchaID);
-						} catch (error) {}
-					});
-					wpformsDispatchEvent(document, "wpformsRecaptchaLoaded", true);
-				};
-			
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script>
+if (new URLSearchParams(location.search).has('sent')) {
+	document.getElementById('wpforms-1086').innerHTML = '<div class="wpforms-confirmation-container-full wpforms-confirmation-scroll" id="wpforms-confirmation-1086" role="alert"><p>Thanks for contacting us! We will be in touch with you shortly.</p></div>';
+}
 </script>
 
 HTML,
@@ -117,22 +93,22 @@ class="post-916 page type-page status-publish ast-article-single" id="post-916" 
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><div class="wpforms-container " id="wpforms-1086"><form id="wpforms-form-1086" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="1086" method="post" enctype="multipart/form-data" action="/contact/" data-token="444f28bb6464d5609d94d5c42ccc796b" data-token-time="1792776224"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-1086-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1"><label class="wpforms-field-label">Name <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-1086-field_1" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][1][first]" required><label for="wpforms-1086-field_1" class="wpforms-field-sublabel after">First</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-1086-field_1-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][1][last]" required><label for="wpforms-1086-field_1-last" class="wpforms-field-sublabel after">Last</label></div></div></div>		<div id="wpforms-1086-field_4-container"
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><div class="wpforms-container " id="wpforms-1086"><form id="wpforms-form-1086" class="wpforms-validate wpforms-form" data-formid="1086" method="post" action="https://api.web3forms.com/submit"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-1086-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1"><label class="wpforms-field-label">Name <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-1086-field_1" class="wpforms-field-name-first wpforms-field-required" name="First name" required><label for="wpforms-1086-field_1" class="wpforms-field-sublabel after">First</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-1086-field_1-last" class="wpforms-field-name-last wpforms-field-required" name="Last name" required><label for="wpforms-1086-field_1-last" class="wpforms-field-sublabel after">Last</label></div></div></div>		<div id="wpforms-1086-field_4-container"
 			class="wpforms-field wpforms-field-text"
 			data-field-type="text"
 			data-field-id="4"
 			>
 			<label class="wpforms-field-label" for="wpforms-1086-field_4" >Name Comment Message</label>
-			<input type="text" id="wpforms-1086-field_4" class="wpforms-field-medium" name="wpforms[fields][4]" >
+			<input type="text" id="wpforms-1086-field_4" class="wpforms-field-medium" name="botcheck" >
 		</div>
-		<div id="wpforms-1086-field_2-container" class="wpforms-field wpforms-field-email" data-field-id="2"><label class="wpforms-field-label" for="wpforms-1086-field_2">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-1086-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" spellcheck="false" required></div><div id="wpforms-1086-field_3-container" class="wpforms-field wpforms-field-textarea" data-field-id="3"><label class="wpforms-field-label" for="wpforms-1086-field_3">Comment or Message</label><textarea id="wpforms-1086-field_3" class="wpforms-field-medium" name="wpforms[fields][3]" ></textarea></div><script>
+		<div id="wpforms-1086-field_2-container" class="wpforms-field wpforms-field-email" data-field-id="2"><label class="wpforms-field-label" for="wpforms-1086-field_2">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-1086-field_2" class="wpforms-field-medium wpforms-field-required" name="email" spellcheck="false" required></div><div id="wpforms-1086-field_3-container" class="wpforms-field wpforms-field-textarea" data-field-id="3"><label class="wpforms-field-label" for="wpforms-1086-field_3">Comment or Message</label><textarea id="wpforms-1086-field_3" class="wpforms-field-medium" name="Message" ></textarea></div><script>
 				( function() {
 					const style = document.createElement( 'style' );
 					style.appendChild( document.createTextNode( '#wpforms-1086-field_4-container { position: absolute !important; overflow: hidden !important; display: inline !important; height: 1px !important; width: 1px !important; z-index: -1000 !important; padding: 0 !important; } #wpforms-1086-field_4-container input { visibility: hidden; } #wpforms-conversational-form-page #wpforms-1086-field_4-container label { counter-increment: none; }' ) );
 					document.head.appendChild( style );
 					document.currentScript?.remove();
 				} )();
-			</script></div><!-- .wpforms-field-container --><div class="wpforms-recaptcha-container wpforms-is-recaptcha wpforms-is-recaptcha-type-v2" ><div class="g-recaptcha" data-sitekey="6LfCtHcUAAAAAMEpRv-7pR7jjexgeFIH1Wdlwlrs"></div><input type="text" name="g-recaptcha-hidden" class="wpforms-recaptcha-hidden" style="position:absolute!important;clip:rect(0,0,0,0)!important;height:1px!important;width:1px!important;border:0!important;overflow:hidden!important;padding:0!important;margin:0!important;" data-rule-recaptcha="1"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="1086"><input type="hidden" name="page_title" value="Contact"><input type="hidden" name="page_url" value="https://wasatchparc.com/contact/"><input type="hidden" name="url_referer" value=""><input type="hidden" name="page_id" value="916"><input type="hidden" name="wpforms[post_id]" value="916"><button type="submit" name="wpforms[submit]" id="wpforms-submit-1086" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button><img decoding="async" src="/wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading"></div></form></div>  <!-- .wpforms-container --></td></tr></tbody></table></figure>
+			</script></div><!-- .wpforms-field-container --><div class="wpforms-recaptcha-container wpforms-is-recaptcha wpforms-is-recaptcha-type-v2" ><div class="h-captcha" data-captcha="true" style="height:78px"></div></div><div class="wpforms-submit-container" ><input type="hidden" name="access_key" value="<?= WEB3FORMS_CLE ?>"><input type="hidden" name="subject" value="Wasatch Parc - contact form"><input type="hidden" name="from_name" value="wasatchparc.com"><input type="hidden" name="redirect" value="https://wasatchparc.com/contact/?sent=1#wpforms-1086"><button type="submit" id="wpforms-submit-1086" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button><img decoding="async" src="/wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading"></div></form></div>  <!-- .wpforms-container --></td></tr></tbody></table></figure>
 </div>
 
 
