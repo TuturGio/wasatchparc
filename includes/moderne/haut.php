@@ -21,6 +21,7 @@ $menu = [
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap">
 <link rel="stylesheet" href="/assets/css/moderne.css?ver=<?= filemtime(dirname(__DIR__, 2) . '/public/assets/css/moderne.css') ?>">
+<?= $page['styles'] ?? '' ?>
 <link rel="icon" href="/wp-content/uploads/2024/12/cropped-cropped-favicon-1-32x32.jpg" sizes="32x32">
 <link rel="icon" href="/wp-content/uploads/2024/12/cropped-cropped-favicon-1-192x192.jpg" sizes="192x192">
 <link rel="apple-touch-icon" href="/wp-content/uploads/2024/12/cropped-cropped-favicon-1-180x180.jpg">

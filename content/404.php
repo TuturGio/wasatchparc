@@ -1,22 +1,18 @@
 <?php
 $page = [
     'chemin' => '/404.html',
+    'nom' => '404',
+    'gabarit' => 'moderne',
     'seo' => <<<'HTML'
 	<title>Page not found &#8211; Wasatch Parc Snow Tubing</title>
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<meta name="robots" content="noindex" />
 
 HTML,
-    'mise_en_page' => 'pleine-largeur',
-    'styles' => "<link rel='stylesheet' id='page-404-css' href='/assets/css/page-404.css?ver=1' media='all' />\n",
-    'itemtype' => 'https://schema.org/WebPage',
-    'classes' => 'error404 wp-custom-logo ast-desktop ast-page-builder-template ast-no-sidebar astra-4.8.7 ast-single-post ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-theme-transparent-header ast-hfb-header',
-    'entete_transparent' => true,
-    'fin' => '				',
+    'styles' => "<link rel='stylesheet' href='/assets/css/page-404.css?ver=2'>\n",
 ];
 ?>
 
-					<main id="main" class="site-main">
 <section class="w404" aria-labelledby="w404-titre">
 	<div class="w404-neige" aria-hidden="true"><?php for ($i = 0; $i < 40; $i++): ?><span></span><?php endfor ?></div>
 	<div class="w404-contenu">
@@ -49,5 +45,4 @@ HTML,
 		</nav>
 	</div>
 </section>
-					</main><!-- #main -->
 		

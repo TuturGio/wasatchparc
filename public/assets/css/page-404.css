@@ -21,7 +21,7 @@
 	max-width: 760px;
 }
 
-.w404-code {
+.w404 .w404-code {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -54,7 +54,7 @@
 	line-height: 1.15;
 }
 
-.w404-texte {
+.w404 .w404-texte {
 	max-width: 560px;
 	margin: 0 auto 2em;
 	color: rgba(255, 255, 255, .9);
@@ -89,14 +89,14 @@
 }
 
 .w404 .w404-bouton-plein {
-	background: var(--ast-global-color-0);
+	background: var(--m-bleu);
 	color: #fff;
 	box-shadow: 0 8px 24px rgba(0, 103, 255, .45);
 }
 
 .w404 .w404-bouton-plein:hover,
 .w404 .w404-bouton-plein:focus-visible {
-	background: var(--ast-global-color-1);
+	background: var(--m-bleu-fonce);
 	color: #fff;
 }
 
@@ -108,7 +108,7 @@
 .w404 .w404-bouton-contour:hover,
 .w404 .w404-bouton-contour:focus-visible {
 	background: #fff;
-	color: var(--ast-global-color-0);
+	color: var(--m-bleu);
 }
 
 .w404-liens {
@@ -213,7 +213,7 @@
 
 @media (max-width: 680px) {
 	.w404 { padding: 130px 16px 60px; }
-	.w404-texte { font-size: 16px; }
+	.w404 .w404-texte { font-size: 16px; }
 	.w404-boutons { flex-direction: column; align-items: stretch; }
 	.w404-liens { grid-template-columns: 1fr; }
 	.w404 .w404-liens a { padding: 14px 18px; text-align: left; }
