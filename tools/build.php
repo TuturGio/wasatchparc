@@ -1,34 +1,26 @@
 <?php
 /**
  * Génère le site statique dans _site/ : chaque content/<chemin>.php devient _site/<chemin>/index.html,
- * puis public/ (images, CSS, JS, CNAME…) est copié tel quel. C'est ce dossier que GitHub Pages publie.
+ * puis public/ (images, CSS, JS, CNAME…) est copié tel quel, sauf le routeur PHP (index.php, .htaccess)
+ * qui ne sert qu'à l'hébergement PHP. C'est ce dossier que GitHub Pages publie.
  *
  * Usage (depuis la racine du projet) : php tools/build.php [dossier de sortie]
  */
 $proj = dirname(__DIR__);
 $sortie = $argv[1] ?? $proj . '/_site';
-require $proj . '/includes/config.php';
-require $proj . '/includes/functions.php';
+require $proj . '/includes/rendu.php';
 if (WEB3FORMS_CLE === '') {
     fwrite(STDERR, "Attention : WEB3FORMS_CLE est vide dans includes/config.php, le formulaire de contact n'enverra rien.\n");
-}
-
-function rendre(string $fichier, string $proj): string
-{
-    ob_start();
-    include $fichier;              // définit $page et écrit le contenu de la zone #primary
-    $contenu = ob_get_clean();
-    ob_start();
-    include $proj . '/includes/haut.php';
-    echo $contenu;
-    include $proj . '/includes/bas.php';
-    return ob_get_clean();
 }
 
 function copier(string $de, string $vers): void
 {
     foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($de, FilesystemIterator::SKIP_DOTS), RecursiveIteratorIterator::SELF_FIRST) as $f) {
-        $cible = $vers . substr($f->getPathname(), strlen($de));
+        $rel = substr($f->getPathname(), strlen($de));
+        if (in_array($rel, ['/index.php', '/.htaccess'], true)) {
+            continue;
+        }
+        $cible = $vers . $rel;
         $f->isDir() ? @mkdir($cible, 0777, true) : copy($f->getPathname(), $cible);
     }
 }
@@ -48,7 +40,7 @@ foreach ($it as $f) {
     $rel = substr($f->getPathname(), strlen($proj . '/content/'), -4);
     $dest = $rel === 'accueil' ? "$sortie/index.html" : ($rel === '404' ? "$sortie/404.html" : "$sortie/$rel/index.html");
     @mkdir(dirname($dest), 0777, true);
-    file_put_contents($dest, rendre($f->getPathname(), $proj));
+    file_put_contents($dest, rendre($f->getPathname()));
     $n++;
 }
 echo "$n pages générées dans $sortie\n";

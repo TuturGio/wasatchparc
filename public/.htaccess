@@ -1,0 +1,28 @@
+# Site PHP de wasatchparc.com (Hostinger). Ce fichier n'est pas publié sur GitHub Pages.
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# http et www vers https://wasatchparc.com
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://wasatchparc.com%{REQUEST_URI} [R=301,L]
+
+# Les fichiers existants (images, CSS, JS…) sont servis tels quels, le reste passe par le routeur.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+</IfModule>
+
+# Cache navigateur pour les fichiers statiques
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType application/javascript "access plus 1 week"
+ExpiresByType font/woff2 "access plus 1 month"
+</IfModule>
