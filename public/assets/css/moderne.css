@@ -361,3 +361,6 @@ body.m-page { margin: 0; font-family: 'Manrope', system-ui, sans-serif; color: v
 	.m-article-carte { transition: none; }
 	.m-article-carte:hover { transform: none; }
 }
+.m-article-corps h2 { font-size: 28px; line-height: 1.25; margin: 1.6em 0 .5em; }
+.m-article-corps ul li { margin-top: .5em; }
+@media (max-width: 700px) { .m-article-corps h2 { font-size: 23px; } }

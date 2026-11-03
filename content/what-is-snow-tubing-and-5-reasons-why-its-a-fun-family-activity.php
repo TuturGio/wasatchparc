@@ -47,7 +47,6 @@ HTML,
 	<div class="m-conteneur">
 		<div class="m-article-corps">
 <p>Snow tubing is basically allowing gravity, the snow and your tubing take you on a fun, jolly ride downhill. So, if you still don&rsquo;t get it; if you go to the top of a snowy hill and ride an inflatable inner tube downhill, that activity is referred to as snow tubing.</p>
-<p>Snow tubing is basically allowing gravity, the snow and your tubing take you on a fun, jolly ride downhill. So, if you still don&rsquo;t get it; if you go to the top of a snowy hill and ride an inflatable inner tube downhill, that activity is referred to as snow tubing.</p>
 <p>What used to be an activity reserved for winter periods, can almost be enjoyed all season &ndash; where the appropriate snowmaking technology is available. However, the fun and the thrill of snow tubing is best enjoyed during winter, when there is actually real snow falling from the sky.</p>
 <p>Snow tubing is an amazing recreational outdoor activity that simply involves gravity pulling you down a slope while you ride on an inner tube. A higher and steeper slope is directly proportional to the amount of fun you&rsquo;ll have.</p>
 <p>You don&rsquo;t need to be a slope or mountain expert to enjoy snow tubing. In fact, you don&rsquo;t have to have large muscles or incredible balance. So long as you can sit down and hold tight, snow tubing is definitely for you.</p>

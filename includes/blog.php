@@ -18,7 +18,7 @@ const ARTICLES = [
         'url' => '/5-amazing-benefits-of-winter-sports/',
         'titre' => '5 Amazing Benefits of Winter Sports',
         'date' => '2024-12-03',
-        'extrait' => 'Snow tubing is basically allowing gravity, the snow and your tubing take you on a fun, jolly ride downhill.',
+        'extrait' => 'From fresh air to family time: five good reasons to get outside this winter.',
     ],
 ];
 
