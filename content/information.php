@@ -1,6 +1,8 @@
 <?php
 $page = [
     'chemin' => '/information/',
+    'nom' => 'information',
+    'gabarit' => 'moderne',
     'seo' => <<<'HTML'
 	<title>Wasatch Parc Snow Tubing - information</title>
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
@@ -15,159 +17,138 @@ $page = [
 		<meta property="og:title" content="Wasatch Parc Snow Tubing - information" />
 		<meta property="og:description" content="Find all information about Wasatch Parc snow tubing. Located in Nordic Valley resort, you will enjoy the best snow tubing in Utah !" />
 		<meta property="og:url" content="https://wasatchparc.com/information/" />
-		<meta property="og:image" content="/wp-content/uploads/2024/12/logo-bracelets.png" />
-		<meta property="og:image:secure_url" content="/wp-content/uploads/2024/12/logo-bracelets.png" />
+		<meta property="og:image" content="https://wasatchparc.com/wp-content/uploads/2024/12/logo-bracelets.png" />
+		<meta property="og:image:secure_url" content="https://wasatchparc.com/wp-content/uploads/2024/12/logo-bracelets.png" />
 		<meta property="article:published_time" content="2024-12-03T22:00:06+00:00" />
 		<meta property="article:modified_time" content="2024-12-22T03:50:26+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Wasatch Parc Snow Tubing - information" />
 		<meta name="twitter:description" content="Find all information about Wasatch Parc snow tubing. Located in Nordic Valley resort, you will enjoy the best snow tubing in Utah !" />
-		<meta name="twitter:image" content="/wp-content/uploads/2024/12/logo-bracelets.png" />
+		<meta name="twitter:image" content="https://wasatchparc.com/wp-content/uploads/2024/12/logo-bracelets.png" />
 		<script type="application/ld+json" class="aioseo-schema">
 			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/wasatchparc.com\/information\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/wasatchparc.com#listItem","position":1,"name":"Home","item":"https:\/\/wasatchparc.com","nextItem":{"@type":"ListItem","@id":"https:\/\/wasatchparc.com\/information\/#listItem","name":"information"}},{"@type":"ListItem","@id":"https:\/\/wasatchparc.com\/information\/#listItem","position":2,"name":"information","previousItem":{"@type":"ListItem","@id":"https:\/\/wasatchparc.com#listItem","name":"Home"}}]},{"@type":"Organization","@id":"https:\/\/wasatchparc.com\/#organization","name":"Wasatch Parc Snow Tubing","description":"Best tubing park in Utah","url":"https:\/\/wasatchparc.com\/","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2024\/12\/logo-bracelets.png","@id":"https:\/\/wasatchparc.com\/information\/#organizationLogo","width":1000,"height":100,"caption":"logo wasatch parc"},"image":{"@id":"https:\/\/wasatchparc.com\/information\/#organizationLogo"}},{"@type":"WebPage","@id":"https:\/\/wasatchparc.com\/information\/#webpage","url":"https:\/\/wasatchparc.com\/information\/","name":"Wasatch Parc Snow Tubing - information","description":"Find all information about Wasatch Parc snow tubing. Located in Nordic Valley resort, you will enjoy the best snow tubing in Utah !","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/wasatchparc.com\/#website"},"breadcrumb":{"@id":"https:\/\/wasatchparc.com\/information\/#breadcrumblist"},"datePublished":"2024-12-03T22:00:06+00:00","dateModified":"2024-12-22T03:50:26+00:00"},{"@type":"WebSite","@id":"https:\/\/wasatchparc.com\/#website","url":"https:\/\/wasatchparc.com\/","name":"Wasatch Parc Snow Tubing","description":"Best tubing park in Utah","inLanguage":"en-US","publisher":{"@id":"https:\/\/wasatchparc.com\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
 HTML,
-    'mise_en_page' => 'page',
-    'styles' => <<<'HTML'
-<link rel='stylesheet' id='uagb-block-positioning-css-css' href='/wp-content/plugins/ultimate-addons-for-gutenberg/assets/css/spectra-block-positioning.min.css?ver=2.17.0' media='all' />
-<link rel='stylesheet' id='uag-style-3-css' href='/wp-content/uploads/uag-plugin/assets/0/uag-css-3.css?ver=1792776224' media='all' />
-
-HTML,
-    'itemtype' => 'https://schema.org/WebPage',
-    'classes' => 'privacy-policy page-template-default page page-id-3 wp-custom-logo ast-desktop ast-separate-container ast-two-container ast-no-sidebar astra-4.8.7 ast-single-post ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled',
-    'uag' => '@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none !important}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none !important}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none !important}}',
-    'entete_transparent' => false,
-    'styles_bas' => <<<'HTML'
-<style id='core-block-supports-inline-css'>
-.wp-elements-368187ec6e0610905607d9113e03daef a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-369d722a64c1aeff70aef1b8d67bacdc a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}
-</style>
-
-HTML,
-    'scripts' => <<<'HTML'
-<script src="/wp-includes/js/dist/vendor/react.min.js?ver=18.3.1.1" id="react-js"></script>
-<script src="/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.3.1.1" id="react-dom-js"></script>
-<script src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
-<script src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
-<script id="wp-i18n-js-after">
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-</script>
-<script src="/wp-content/plugins/team-section/dist/script.js?ver=1.0.9" id="tsb-team-script-js"></script>
-
-HTML,
-    'fin' => '				',
 ];
 ?>
 
-
-		
-					<main id="main" class="site-main">
-				<article
-class="post-3 page type-page status-publish ast-article-single" id="post-3" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
-	
-				<header class="entry-header ">
-				<h1 class="entry-title" itemprop="headline">information</h1>			</header> <!-- .entry-header -->
-		
-<div class="entry-content clear"
-	data-ast-blocks-layout="true" itemprop="text">
-
-	
-			<div class='wp-block-tsb-team  align' id='tsbTeamMembers-c95dc53b-7' data-attributes='{&quot;cId&quot;:&quot;c95dc53b-7&quot;,&quot;members&quot;:[{&quot;background&quot;:{&quot;color&quot;:&quot;#0000&quot;},&quot;border&quot;:{&quot;radius&quot;:&quot;3px&quot;},&quot;shadow&quot;:[],&quot;photo&quot;:{&quot;id&quot;:1071,&quot;url&quot;:&quot;\/wp-content\/uploads\/2024\/12\/kids-tall.jpeg&quot;,&quot;alt&quot;:&quot;&quot;,&quot;title&quot;:&quot;kids-tall&quot;},&quot;photoBorder&quot;:{&quot;radius&quot;:&quot;50%&quot;},&quot;name&quot;:&quot;HEIGHT REQUIREMENTS&quot;,&quot;nameColor&quot;:&quot;#333&quot;,&quot;title&quot;:&quot;&quot;,&quot;titleColor&quot;:&quot;#333&quot;,&quot;separator&quot;:{&quot;width&quot;:&quot;20%&quot;,&quot;height&quot;:&quot;3px&quot;,&quot;color&quot;:&quot;#777&quot;},&quot;bio&quot;:&quot;Kids MUST be at least 42\u201d tall. No lap\/double riding allowed&quot;,&quot;bioColor&quot;:&quot;#333&quot;,&quot;social&quot;:[],&quot;socialIconColors&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;default&quot;:{&quot;color&quot;:&quot;#fff&quot;,&quot;bg&quot;:&quot;#4527a4&quot;}}},{&quot;background&quot;:{&quot;color&quot;:&quot;#0000&quot;},&quot;border&quot;:{&quot;radius&quot;:&quot;3px&quot;},&quot;shadow&quot;:[],&quot;photo&quot;:{&quot;id&quot;:1073,&quot;url&quot;:&quot;\/wp-content\/uploads\/2024\/12\/kid-tubing-helmet.jpeg&quot;,&quot;alt&quot;:&quot;&quot;,&quot;title&quot;:&quot;kid-tubing-helmet&quot;},&quot;photoBorder&quot;:{&quot;radius&quot;:&quot;50%&quot;},&quot;name&quot;:&quot;HELMET REQUIREMENTS&quot;,&quot;nameColor&quot;:&quot;#333&quot;,&quot;title&quot;:&quot;&quot;,&quot;titleColor&quot;:&quot;#333&quot;,&quot;separator&quot;:{&quot;width&quot;:&quot;20%&quot;,&quot;height&quot;:&quot;3px&quot;,&quot;color&quot;:&quot;#777&quot;},&quot;bio&quot;:&quot;Wasatch parc doesn\u2019t provide helmets. You will be able to ride without, but it\u2019s strongly advised to wear one.&quot;,&quot;bioColor&quot;:&quot;#333&quot;,&quot;social&quot;:[],&quot;socialIconColors&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;default&quot;:{&quot;color&quot;:&quot;#fff&quot;,&quot;bg&quot;:&quot;#4527a4&quot;}}},{&quot;background&quot;:{&quot;color&quot;:&quot;#0000&quot;},&quot;border&quot;:{&quot;radius&quot;:&quot;3px&quot;},&quot;shadow&quot;:[],&quot;photo&quot;:{&quot;id&quot;:1074,&quot;url&quot;:&quot;\/wp-content\/uploads\/2024\/12\/waiver.jpeg&quot;,&quot;alt&quot;:&quot;&quot;,&quot;title&quot;:&quot;waiver&quot;},&quot;photoBorder&quot;:{&quot;radius&quot;:&quot;50%&quot;},&quot;name&quot;:&quot;RELEASE OF LIABILITY&quot;,&quot;nameColor&quot;:&quot;#333&quot;,&quot;title&quot;:&quot;&quot;,&quot;titleColor&quot;:&quot;#333&quot;,&quot;separator&quot;:{&quot;width&quot;:&quot;20%&quot;,&quot;height&quot;:&quot;3px&quot;,&quot;color&quot;:&quot;#777&quot;},&quot;bio&quot;:&quot;You will be asked to sign a waiver before riding. Save time and download it &lt;a href=\&quot;\/wp-content\/uploads\/2024\/12\/Liability-waiver.pdf\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener nofollow\&quot; title=\&quot;\&quot;&gt;HERE&lt;\/a&gt;&quot;,&quot;bioColor&quot;:&quot;#333&quot;,&quot;social&quot;:[],&quot;socialIconColors&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;default&quot;:{&quot;color&quot;:&quot;#fff&quot;,&quot;bg&quot;:&quot;#4527a4&quot;}}}],&quot;align&quot;:&quot;&quot;,&quot;columns&quot;:{&quot;desktop&quot;:3,&quot;tablet&quot;:2,&quot;mobile&quot;:1},&quot;columnGap&quot;:&quot;30px&quot;,&quot;rowGap&quot;:&quot;30px&quot;,&quot;layout&quot;:&quot;vertical&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;isLinkNewTab&quot;:false,&quot;textAlign&quot;:&quot;center&quot;,&quot;padding&quot;:{&quot;vertical&quot;:&quot;50px&quot;,&quot;horizontal&quot;:&quot;20px&quot;},&quot;photoWidth&quot;:&quot;170px&quot;,&quot;photoMargin&quot;:{&quot;side&quot;:4,&quot;bottom&quot;:&quot;20px&quot;},&quot;nameTypo&quot;:{&quot;fontSize&quot;:{&quot;desktop&quot;:20,&quot;tablet&quot;:18,&quot;mobile&quot;:16},&quot;fontWeight&quot;:600},&quot;nameMargin&quot;:{&quot;side&quot;:4,&quot;bottom&quot;:&quot;10px&quot;},&quot;isTitle&quot;:true,&quot;titleTypo&quot;:{&quot;fontSize&quot;:{&quot;desktop&quot;:16,&quot;tablet&quot;:16,&quot;mobile&quot;:16}},&quot;titleMargin&quot;:{&quot;side&quot;:4,&quot;bottom&quot;:&quot;10px&quot;},&quot;isSep&quot;:true,&quot;sepMargin&quot;:{&quot;side&quot;:4,&quot;bottom&quot;:&quot;15px&quot;},&quot;isBio&quot;:true,&quot;bioTypo&quot;:{&quot;fontSize&quot;:{&quot;desktop&quot;:15,&quot;tablet&quot;:15,&quot;mobile&quot;:15}},&quot;bioMargin&quot;:{&quot;side&quot;:4,&quot;bottom&quot;:&quot;15px&quot;},&quot;isSocial&quot;:true,&quot;socialSize&quot;:&quot;22px&quot;,&quot;socialIconMargin&quot;:{&quot;side&quot;:2,&quot;vertical&quot;:&quot;10px&quot;,&quot;horizontal&quot;:&quot;10px&quot;}}'></div>
-
-		
-
-
-<h2 class="wp-block-heading">Hours of operation</h2>
-
-
-
-<p><em><u>Holidays</u> :</em> Mon-Sat : 11am-5pm; Sun 10am-4pm</p>
-
-
-
-<p><em><u>Regular hours</u> :</em> Mon-Wed-Fri-Sat : 11am-5pm; Sunday : 10am-4pm</p>
-
-
-
-<p></p>
-
-
-
-<p>Address :</p>
-
-
-
-<p>3567 Nordic Valley Way, Eden, UT 84310</p>
-
-
-
-<p>Mailing address: Po box 1005, Eden UT – 84310</p>
-
-
-
-<p>Toll free phone number :&nbsp;<a href="tel:8003919954">800-391-9954</a></p>
-
-
-
-<div class="wp-block-uagb-container uagb-block-21ab1684 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap">
-<p></p>
-</div></div>
-
-
-
-<h2 class="wp-block-heading">Parking</h2>
-
-
-
-<p><strong>Please use P3, the small parking lot below the tubing hill is no longer accessible</strong></p>
-
-
-
-<div class="wp-block-uagb-container uagb-block-7f396ec7 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap">
-<p></p>
-</div></div>
-
-
-
-<div class="wp-block-uagb-container uagb-block-5e4f2a54 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"></div></div>
-
-
-
-<h2 class="wp-block-heading">2024-2025 Group &amp; discount information</h2>
-
-
-
-<p class="has-vivid-red-color has-text-color has-link-color wp-elements-368187ec6e0610905607d9113e03daef">Peak periods: </p>
-
-
-
-<p class="has-vivid-red-color has-text-color has-link-color wp-elements-369d722a64c1aeff70aef1b8d67bacdc">Dec 20, 2024 – Jan 12, 2025<br>Jan 18 – 20, 2025<br>Feb 15 – 17, 2025</p>
-
-
-
-<p><strong>Family special:</strong> families of 5 get one more for free (10 people max). Not available for online booking<br>Availability: This discount is available anytime during the season</p>
-
-
-
-<p><strong>Group discount</strong>: A booking for a group of 20 or more people gets 20% off<br>Payment: Single online payment. Our Sales Team will assist you by email or phone<br>Availability: Group bookings are not available during “peak periods” &amp; weekends</p>
-
-
-
-<p><strong>Private session</strong>: Up to 50 people at the same time on the tubing hill<br>Price: Please call or email us to get a quote<br>Availability: Private sessions are not available during “peak periods” &amp; weekends</p>
-
-
-
-<p></p>
-
-	
-	
-</div><!-- .entry-content .clear -->
-
-	
-	
-</article><!-- #post-## -->
-
-			</main><!-- #main -->
-			
-		
+<section class="m-photo m-info-hero">
+	<div class="m-conteneur">
+		<p class="m-surtitre">Information</p>
+		<h1>Plan your visit</h1>
+		<p class="m-hero-texte">Hours, directions, parking, safety rules and group offers: everything you need before you come tubing at Wasatch Parc.</p>
+		<div class="m-boutons">
+			<a class="m-bouton m-bouton-principal" href="<?= LIEN_RESERVATION ?>">Book a session</a>
+			<a class="m-bouton m-bouton-blanc" href="#groups">Groups &amp; discounts</a>
+		</div>
+	</div>
+</section>
+
+<section class="m-section m-section-fond" aria-labelledby="titre-pratique">
+	<div class="m-conteneur">
+		<h2 class="m-titre-section" id="titre-pratique">Hours &amp; directions</h2>
+		<div class="m-pratique">
+			<div class="m-pratique-cartes">
+				<div class="m-bloc m-bloc-horaires">
+					<span class="m-icone" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+					<h3>Hours of operation</h3>
+					<table class="m-horaires">
+						<caption>Regular hours</caption>
+						<tbody>
+							<tr><th scope="row">Mon, Wed, Fri, Sat</th><td>11am – 5pm</td></tr>
+							<tr><th scope="row">Sunday</th><td>10am – 4pm</td></tr>
+						</tbody>
+					</table>
+					<table class="m-horaires">
+						<caption>Holidays</caption>
+						<tbody>
+							<tr><th scope="row">Mon – Sat</th><td>11am – 5pm</td></tr>
+							<tr><th scope="row">Sunday</th><td>10am – 4pm</td></tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="m-bloc">
+					<span class="m-icone" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+					<h3>Address</h3>
+					<p>3567 Nordic Valley Way<br>Eden, UT 84310</p>
+					<p class="m-bloc-note">Mailing address: PO Box 1005, Eden, UT 84310</p>
+					<a class="m-bouton m-bouton-contour m-bouton-moyen" href="https://www.google.com/maps/search/?api=1&amp;query=3567+Nordic+Valley+Way%2C+Eden%2C+UT+84310" target="_blank" rel="noopener">Get directions</a>
+				</div>
+				<div class="m-bloc">
+					<span class="m-icone" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg></span>
+					<h3>Parking</h3>
+					<p>Please use lot P3. The small parking lot below the tubing hill is no longer accessible.</p>
+				</div>
+				<div class="m-bloc">
+					<span class="m-icone" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+					<h3>Toll free phone</h3>
+					<p><a href="tel:+18003919954"><strong>800-391-9954</strong></a></p>
+					<p class="m-bloc-note">Or write to <a href="mailto:info@wasatchparc.com">info@wasatchparc.com</a></p>
+				</div>
+			</div>
+			<div class="m-plan"><img src="/wp-content/uploads/2024/12/plan_OK.png" width="400" height="400" alt="Map: Wasatch Parc in Ogden Valley, near Eden and Nordic Valley" loading="lazy"></div>
+		</div>
+	</div>
+</section>
+
+<section class="m-section" aria-labelledby="titre-regles">
+	<div class="m-conteneur">
+		<p class="m-surtitre">Before you ride</p>
+		<h2 class="m-titre-section" id="titre-regles">Safety rules</h2>
+		<div class="m-cartes">
+			<div class="m-carte m-carte-bordee">
+				<img src="/wp-content/uploads/2024/12/kids-tall.jpeg" width="320" height="320" alt="" loading="lazy">
+				<div class="m-carte-texte"><h3>Height requirements</h3><p>Kids must be at least 42” tall. No lap or double riding allowed.</p></div>
+			</div>
+			<div class="m-carte m-carte-bordee">
+				<img src="/wp-content/uploads/2024/12/kid-tubing-helmet.jpeg" width="320" height="320" alt="" loading="lazy">
+				<div class="m-carte-texte"><h3>Helmet requirements</h3><p>Wasatch Parc doesn't provide helmets. You will be able to ride without, but it's strongly advised to wear one.</p></div>
+			</div>
+			<div class="m-carte m-carte-bordee">
+				<img src="/wp-content/uploads/2024/12/waiver.jpeg" width="320" height="320" alt="" loading="lazy">
+				<div class="m-carte-texte"><h3>Release of liability</h3><p>You will be asked to sign a waiver before riding. Save time and download it now.</p><p><a class="m-bouton m-bouton-clair m-bouton-moyen" href="/wp-content/uploads/2024/12/Liability-waiver.pdf" target="_blank" rel="noopener">Download the waiver (PDF)</a></p></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="m-section m-photo m-bande-groupes m-groupes" id="groups" aria-labelledby="titre-groupes">
+	<div class="m-conteneur">
+		<p class="m-surtitre">Groups &amp; discounts</p>
+		<h2 class="m-titre-section" id="titre-groupes">Bring the whole crew</h2>
+		<div class="m-offres m-offres-detail">
+			<div class="m-offre">
+				<p class="m-offre-chiffre">+1 free</p>
+				<h3>Family special</h3>
+				<p>Families of 5 get one more for free (10 people max).</p>
+				<dl><dt>Booking</dt><dd>Not available for online booking</dd><dt>Availability</dt><dd>Anytime during the season</dd></dl>
+			</div>
+			<div class="m-offre">
+				<p class="m-offre-chiffre">20% off</p>
+				<h3>Group discount</h3>
+				<p>A booking for a group of 20 or more people gets 20% off.</p>
+				<dl><dt>Payment</dt><dd>Single online payment. Our sales team will assist you by email or phone</dd><dt>Availability</dt><dd>Not during peak periods &amp; weekends</dd></dl>
+			</div>
+			<div class="m-offre">
+				<p class="m-offre-chiffre">Up to 50</p>
+				<h3>Private session</h3>
+				<p>Up to 50 people at the same time on the tubing hill.</p>
+				<dl><dt>Price</dt><dd>Call or email us to get a quote</dd><dt>Availability</dt><dd>Not during peak periods &amp; weekends</dd></dl>
+			</div>
+		</div>
+		<div class="m-pointe">
+			<h3>Peak periods <span>(2024–2025 season)</span></h3>
+			<ul>
+				<li>Dec 20, 2024 – Jan 12, 2025</li>
+				<li>Jan 18 – 20, 2025</li>
+				<li>Feb 15 – 17, 2025</li>
+			</ul>
+		</div>
+		<div class="m-boutons">
+			<a class="m-bouton m-bouton-blanc m-bouton-moyen" href="/contact/">Ask for a group quote</a>
+			<a class="m-bouton m-bouton-contour-blanc m-bouton-moyen" href="tel:+18003919954">Call 800-391-9954</a>
+		</div>
+	</div>
+</section>

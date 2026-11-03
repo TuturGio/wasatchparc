@@ -270,3 +270,49 @@ body.m-page { margin: 0; font-family: 'Manrope', system-ui, sans-serif; color: v
 	body.m-contact { padding-bottom: 0; }
 	.m-contact .m-reserver-mobile { display: none; }
 }
+
+/* Page Information */
+.m-info-hero { background-image: linear-gradient(180deg, rgba(8,20,40,.6) 0%, rgba(8,20,40,.85) 100%), url(/wp-content/uploads/2024/12/home-snow-tubing.jpg); background-position: center 30%; }
+.m-info-hero .m-conteneur { padding-top: 160px; padding-bottom: 96px; display: flex; flex-direction: column; gap: 18px; align-items: flex-start; }
+.m-info-hero h1 { font-size: 68px; line-height: 1.05; letter-spacing: -0.02em; }
+.m-info-hero .m-hero-texte { max-width: 620px; font-size: 19px; }
+.m-pratique { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 24px; margin-top: 40px; align-items: start; }
+.m-pratique-cartes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.m-bloc { background: #fff; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.m-bloc h3 { font-size: 20px; font-weight: 700; letter-spacing: 0; margin-top: 6px; }
+.m-bloc p { color: var(--m-gris); font-size: 15px; }
+.m-bloc .m-bouton { margin-top: 8px; }
+.m-bloc-note { font-size: 14px !important; }
+.m-horaires { width: 100%; border-collapse: collapse; font-size: 15px; }
+.m-horaires caption { text-align: left; font-weight: 700; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--m-lien); padding: 6px 0; }
+.m-horaires th { text-align: left; font-weight: 600; padding: 6px 12px 6px 0; }
+.m-horaires td { text-align: right; color: var(--m-gris); padding: 6px 0; white-space: nowrap; }
+.m-horaires tr + tr th, .m-horaires tr + tr td { border-top: 1px solid var(--m-bord); }
+.m-pratique .m-plan { padding: 24px; border-radius: 24px; }
+.m-carte-bordee { border: 1px solid var(--m-bord); }
+.m-offres-detail .m-offre dl { margin: 8px 0 0; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.2); display: flex; flex-direction: column; gap: 2px; font-size: 14px; }
+.m-offres-detail .m-offre dt { font-weight: 700; color: #fff; margin-top: 6px; }
+.m-offres-detail .m-offre dd { margin: 0; color: #E2E8F0; }
+.m-pointe { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.25); border-radius: 20px; padding: 22px 26px; max-width: 980px; margin-bottom: 28px; }
+.m-pointe h3 { font-family: 'Manrope', sans-serif; font-size: 17px; font-weight: 700; letter-spacing: 0; margin-bottom: 8px; }
+.m-pointe h3 span { font-weight: 500; color: var(--m-gris-clair); }
+.m-pointe ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px 12px; }
+.m-pointe li { background: rgba(255,255,255,.14); border-radius: 999px; padding: 6px 14px; font-size: 15px; font-weight: 600; }
+.m-page .m-bouton-contour-blanc { background: transparent; color: #fff; border-color: rgba(255,255,255,.7); }
+.m-page .m-bouton-contour-blanc:hover { background: rgba(255,255,255,.12); color: #fff; }
+@media (max-width: 1024px) {
+	.m-pratique { grid-template-columns: 1fr; }
+	.m-pratique .m-plan img { max-width: 360px; }
+}
+@media (max-width: 700px) {
+	.m-info-hero .m-conteneur { padding-top: 120px; padding-bottom: 56px; }
+	.m-info-hero h1 { font-size: 44px; }
+	.m-info-hero .m-hero-texte { font-size: 16px; }
+	.m-info-hero .m-boutons { flex-direction: column; align-self: stretch; }
+	.m-pratique { margin-top: 24px; gap: 16px; }
+	.m-pratique-cartes { grid-template-columns: 1fr; gap: 16px; }
+	.m-bloc { padding: 22px; border-radius: 20px; }
+	.m-carte-texte .m-bouton { margin-top: 6px; padding: 12px 18px; font-size: 14px; }
+	.m-groupes .m-boutons { flex-direction: column; }
+}
+.m-pied-bas a { white-space: nowrap; }
