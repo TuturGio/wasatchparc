@@ -2,7 +2,6 @@
 $page = [
     'chemin' => '/information/',
     'nom' => 'information',
-    'gabarit' => 'moderne',
     'seo' => <<<'HTML'
 	<title>Wasatch Parc Snow Tubing - information</title>
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>

@@ -9,17 +9,20 @@ sur GitHub (TuturGio/wasatchparc), pour pouvoir reconstruire le site en cas de p
 
 ## Organisation
 
-- `content/` contient une page par fichier. Chaque fichier définit le tableau `$page` (SEO, mise en page, scripts), puis le contenu de la zone `#primary`.
-- `includes/haut.php` et `includes/bas.php` sont les gabarits communs : `<head>`, en-tête, menu, pied de page et scripts.
-- `includes/moderne/` (haut.php, bas.php) et `public/assets/css/moderne.css` : la nouvelle charte, utilisée par les pages dont `$page` contient `'gabarit' => 'moderne'` (accueil et contact depuis le 03/11/2026). Réglages dans `includes/config.php` : `SAISON_FERMEE` (bandeau de saison), `LIEN_RESERVATION`, `LIEN_CARTES_CADEAUX`.
-- `includes/functions.php` contient le logo et le menu (l'entrée active est calculée).
-- `includes/config.php` contient la clé Web3Forms du formulaire de contact.
-- `public/` est copié tel quel. On y trouve les images, CSS et JS repris de WordPress (aux mêmes chemins `wp-content/…`), ainsi que `CNAME`, `robots.txt` et `sitemap.xml`.
+- `content/` contient une page par fichier. Chaque fichier définit le tableau `$page` (adresse, nom, bloc SEO du `<head>`, styles ou scripts propres à la page), puis le contenu de la page.
+- `includes/haut.php` et `includes/bas.php` sont le gabarit commun : `<head>`, bandeau de saison, en-tête, menu, pied de page et scripts.
+- `includes/rendu.php` assemble une page ; `public/index.php` est le routeur (adresses, redirection `/x` → `/x/`, page 404, envoi du formulaire).
+- `includes/config.php` : `SAISON_FERMEE` (bandeau « Closed for the … season »), `LIEN_RESERVATION`, `LIEN_CARTES_CADEAUX`, et le chemin du dossier privé.
+- `includes/contact.php` : formulaire de contact envoyé par SMTP avec la boîte Hostinger `info@wasatchparc.com` (anti-spam : champ piège, jeton à usage unique, limite par IP).
+- `includes/blog.php` : la liste des articles (titres, dates, extraits) pour la page Blog et le bas des articles.
+- `public/assets/css/moderne.css` est la feuille de style du site ; `page-404.css` celle de la page 404.
+- `public/wp-content/uploads/` garde les images aux mêmes adresses que sous WordPress.
+- `~/wasatchparc-prive/` (hors du site et hors de git) : mot de passe SMTP, clé secrète des jetons, fichiers anti-spam.
 
 ## Modifier le site
 
-1. Modifier le fichier de la page dans `content/` (ou un gabarit dans `includes/`) sur le serveur.
-2. Vérifier la page en ligne.
+1. Modifier le fichier de la page dans `content/` (ou le gabarit dans `includes/`) sur le serveur.
+2. Vérifier la page en ligne. Après une modification de CSS ou d'image, changer son numéro `?ver=` dans les pages : Cloudflare garde ces fichiers en cache six mois (`moderne.css` le fait tout seul).
 3. `bash tools/sauvegarder.sh "Ce qui a changé"`.
 
 Revenir en arrière : `git log` puis `git revert <commit>` (ou `git checkout <commit> -- <fichier>`), puis sauvegarder.
@@ -28,13 +31,5 @@ Retour au WordPress (conservé dans `public_html-wordpress`, base `u475088640_2h
 `cd ~/domains/wasatchparc.com && rm public_html && mv public_html-wordpress public_html`.
 Sauvegarde d'avant bascule : `~/sauvegardes/bascule-20261103-1519/`.
 
-`php tools/build.php` génère encore une version statique dans `_site/` (ancienne publication GitHub Pages, arrêtée le 03/11/2026).
-
-## Outils de migration (à lancer une seule fois)
-
-- `tools/aspirer.py` copie les fichiers du WordPress en ligne dans `public/`.
-- `tools/nettoyer.py` puis `tools/convertir.py` transforment les pages WordPress en gabarits et en contenus PHP. **Ne pas relancer `convertir.py`** : il écraserait les modifications faites à la main, à commencer par le formulaire de contact.
-- `tools/verifier.py` compare le HTML généré à celui de WordPress, à l'octet près.
-- `tools/captures.py` compare les captures d'écran du site en ligne et de `_site/` (sur ordinateur et sur mobile).
-
-Ces outils ont besoin de `.cache/brut/`, les pages WordPress téléchargées le 23/10/2026. Ce dossier n'est pas versionné.
+`php tools/build.php` génère une copie statique du site dans `_site/` (ancienne publication GitHub Pages, arrêtée le 03/11/2026).
+Le gabarit repris de WordPress (Astra) et les fichiers des extensions ont été supprimés le 03/11/2026 ; ils restent dans l'historique git.

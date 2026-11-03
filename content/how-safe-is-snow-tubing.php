@@ -2,7 +2,6 @@
 $page = [
     'chemin' => '/how-safe-is-snow-tubing/',
     'nom' => 'article',
-    'gabarit' => 'moderne',
     'seo' => <<<'HTML'
 	<title>How safe is snow tubing ? - Wasatch Parc Snow Tubing</title>
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>

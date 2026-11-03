@@ -2,7 +2,6 @@
 $page = [
     'chemin' => '/404.html',
     'nom' => '404',
-    'gabarit' => 'moderne',
     'seo' => <<<'HTML'
 	<title>Page not found &#8211; Wasatch Parc Snow Tubing</title>
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>

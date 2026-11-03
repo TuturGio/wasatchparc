@@ -2,7 +2,6 @@
 $page = [
     'chemin' => '/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity/',
     'nom' => 'article',
-    'gabarit' => 'moderne',
     'seo' => <<<'HTML'
 	<title>What is Snow Tubing and 5 Reasons Why it’s a Fun Family Activity - Wasatch Parc Snow Tubing</title>
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>

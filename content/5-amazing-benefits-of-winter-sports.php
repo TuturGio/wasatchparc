@@ -2,7 +2,6 @@
 $page = [
     'chemin' => '/5-amazing-benefits-of-winter-sports/',
     'nom' => 'article',
-    'gabarit' => 'moderne',
     'seo' => <<<'HTML'
 	<title>5 Amazing Benefits of Winter Sports - Wasatch Parc Snow Tubing</title>
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
