@@ -1,6 +1,8 @@
 <?php
 $page = [
     'chemin' => '/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity/',
+    'nom' => 'article',
+    'gabarit' => 'moderne',
     'seo' => <<<'HTML'
 	<title>What is Snow Tubing and 5 Reasons Why it’s a Fun Family Activity - Wasatch Parc Snow Tubing</title>
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
@@ -16,69 +18,34 @@ $page = [
 		<meta property="og:title" content="What is Snow Tubing and 5 Reasons Why it’s a Fun Family Activity - Wasatch Parc Snow Tubing" />
 		<meta property="og:description" content="Snow tubing is basically allowing gravity, the snow and your tubing take you on a fun, jolly ride downhill. So, if you still don’t get it; if you go to the top of a snowy hill and ride an inflatable inner tube downhill, that activity is referred to as snow tubing. Snow tubing is basically" />
 		<meta property="og:url" content="https://wasatchparc.com/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity/" />
-		<meta property="og:image" content="/wp-content/uploads/2024/12/logo-bracelets.png" />
-		<meta property="og:image:secure_url" content="/wp-content/uploads/2024/12/logo-bracelets.png" />
+		<meta property="og:image" content="https://wasatchparc.com/wp-content/uploads/2024/12/logo-bracelets.png" />
+		<meta property="og:image:secure_url" content="https://wasatchparc.com/wp-content/uploads/2024/12/logo-bracelets.png" />
 		<meta property="article:published_time" content="2024-12-04T10:44:48+00:00" />
 		<meta property="article:modified_time" content="2024-12-05T08:18:25+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="What is Snow Tubing and 5 Reasons Why it’s a Fun Family Activity - Wasatch Parc Snow Tubing" />
 		<meta name="twitter:description" content="Snow tubing is basically allowing gravity, the snow and your tubing take you on a fun, jolly ride downhill. So, if you still don’t get it; if you go to the top of a snowy hill and ride an inflatable inner tube downhill, that activity is referred to as snow tubing. Snow tubing is basically" />
-		<meta name="twitter:image" content="/wp-content/uploads/2024/12/logo-bracelets.png" />
+		<meta name="twitter:image" content="https://wasatchparc.com/wp-content/uploads/2024/12/logo-bracelets.png" />
 		<script type="application/ld+json" class="aioseo-schema">
 			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BlogPosting","@id":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/#blogposting","name":"What is Snow Tubing and 5 Reasons Why it\u2019s a Fun Family Activity - Wasatch Parc Snow Tubing","headline":"What is Snow Tubing and 5 Reasons Why it\u2019s a Fun Family Activity","author":{"@id":"https:\/\/wasatchparc.com\/author\/infowasatchparc-com\/#author"},"publisher":{"@id":"https:\/\/wasatchparc.com\/#organization"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2024\/12\/logo-bracelets.png","@id":"https:\/\/wasatchparc.com\/#articleImage","width":1000,"height":100,"caption":"logo wasatch parc"},"datePublished":"2024-12-04T10:44:48+00:00","dateModified":"2024-12-05T08:18:25+00:00","inLanguage":"en-US","mainEntityOfPage":{"@id":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/#webpage"},"isPartOf":{"@id":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/#webpage"},"articleSection":"Blog"},{"@type":"BreadcrumbList","@id":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/wasatchparc.com#listItem","position":1,"name":"Home","item":"https:\/\/wasatchparc.com","nextItem":{"@type":"ListItem","@id":"https:\/\/wasatchparc.com\/category\/blog\/#listItem","name":"Blog"}},{"@type":"ListItem","@id":"https:\/\/wasatchparc.com\/category\/blog\/#listItem","position":2,"name":"Blog","item":"https:\/\/wasatchparc.com\/category\/blog\/","nextItem":{"@type":"ListItem","@id":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/#listItem","name":"What is Snow Tubing and 5 Reasons Why it\u2019s a Fun Family Activity"},"previousItem":{"@type":"ListItem","@id":"https:\/\/wasatchparc.com#listItem","name":"Home"}},{"@type":"ListItem","@id":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/#listItem","position":3,"name":"What is Snow Tubing and 5 Reasons Why it\u2019s a Fun Family Activity","previousItem":{"@type":"ListItem","@id":"https:\/\/wasatchparc.com\/category\/blog\/#listItem","name":"Blog"}}]},{"@type":"Organization","@id":"https:\/\/wasatchparc.com\/#organization","name":"Wasatch Parc Snow Tubing","description":"Best tubing park in Utah","url":"https:\/\/wasatchparc.com\/","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2024\/12\/logo-bracelets.png","@id":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/#organizationLogo","width":1000,"height":100,"caption":"logo wasatch parc"},"image":{"@id":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/#organizationLogo"}},{"@type":"Person","@id":"https:\/\/wasatchparc.com\/author\/infowasatchparc-com\/#author","url":"https:\/\/wasatchparc.com\/author\/infowasatchparc-com\/","name":"wasatchparc","image":{"@type":"ImageObject","@id":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/37a3b8232e0f20191992ca78d6fa7e18?s=96&d=mm&r=g","width":96,"height":96,"caption":"wasatchparc"}},{"@type":"WebPage","@id":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/#webpage","url":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/","name":"What is Snow Tubing and 5 Reasons Why it\u2019s a Fun Family Activity - Wasatch Parc Snow Tubing","description":"Snow tubing is basically allowing gravity, the snow and your tubing take you on a fun, jolly ride downhill. So, if you still don\u2019t get it; if you go to the top of a snowy hill and ride an inflatable inner tube downhill, that activity is referred to as snow tubing. Snow tubing is basically","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/wasatchparc.com\/#website"},"breadcrumb":{"@id":"https:\/\/wasatchparc.com\/what-is-snow-tubing-and-5-reasons-why-its-a-fun-family-activity\/#breadcrumblist"},"author":{"@id":"https:\/\/wasatchparc.com\/author\/infowasatchparc-com\/#author"},"creator":{"@id":"https:\/\/wasatchparc.com\/author\/infowasatchparc-com\/#author"},"datePublished":"2024-12-04T10:44:48+00:00","dateModified":"2024-12-05T08:18:25+00:00"},{"@type":"WebSite","@id":"https:\/\/wasatchparc.com\/#website","url":"https:\/\/wasatchparc.com\/","name":"Wasatch Parc Snow Tubing","description":"Best tubing park in Utah","inLanguage":"en-US","publisher":{"@id":"https:\/\/wasatchparc.com\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
 HTML,
-    'mise_en_page' => 'article',
-    'itemtype' => 'https://schema.org/Blog',
-    'classes' => 'post-template-default single single-post postid-1135 single-format-standard wp-custom-logo ast-desktop ast-separate-container ast-two-container ast-no-sidebar astra-4.8.7 ast-blog-single-style-1 ast-single-post ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled',
-    'uag' => <<<'HTML'
-@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none !important}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none !important}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none !important}}</style><style id="uagb-style-frontend-1135">.uag-blocks-common-selector{z-index:var(--z-index-desktop) !important}@media (max-width: 976px){.uag-blocks-common-selector{z-index:var(--z-index-tablet) !important}}@media (max-width: 767px){.uag-blocks-common-selector{z-index:var(--z-index-mobile) !important}}
-
-HTML,
-    'entete_transparent' => false,
-    'fin' => '				',
 ];
 ?>
 
+<section class="m-photo m-article-hero">
+	<div class="m-conteneur m-article-entete">
+		<p class="m-surtitre"><a href="/category/blog/">Blog</a></p>
+		<h1 id="titre-article">What is Snow Tubing and 5 Reasons Why it’s a Fun Family Activity</h1>
+		<p class="m-article-meta"><?= article_date('2024-12-04') ?> · By Wasatch Parc</p>
+	</div>
+</section>
 
-		
-					<main id="main" class="site-main">
-				
-
-<article
-class="post-1135 post type-post status-publish format-standard hentry category-blog ast-article-single" id="post-1135" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
-
-	
-	
-<div class="ast-post-format- ast-no-thumb single-layout-1">
-
-	
-	
-		<header class="entry-header ast-no-thumbnail">
-
-			
-			<h1 class="entry-title" itemprop="headline">What is Snow Tubing and 5 Reasons Why it’s a Fun Family Activity</h1><div class="entry-meta"> / <span class="ast-terms-link"><a href="/category/blog/" class="">Blog</a></span> / By <span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by wasatchparc"
-				href="/author/infowasatchparc-com/" rel="author"
-				class="url fn n" itemprop="url"				>
-				<span
-				class="author-name" itemprop="name"				>
-				wasatchparc			</span>
-			</a>
-		</span>
-
-		</div>
-			
-		</header><!-- .entry-header -->
-
-	
-	
-	<div class="entry-content clear"
-	data-ast-blocks-layout="true" itemprop="text"	>
-
-		
-		
+<article class="m-section" aria-labelledby="titre-article">
+	<div class="m-conteneur">
+		<div class="m-article-corps">
 <p>Snow tubing is basically allowing gravity, the snow and your tubing take you on a fun, jolly ride downhill. So, if you still don&rsquo;t get it; if you go to the top of a snowy hill and ride an inflatable inner tube downhill, that activity is referred to as snow tubing.</p>
 <p>Snow tubing is basically allowing gravity, the snow and your tubing take you on a fun, jolly ride downhill. So, if you still don&rsquo;t get it; if you go to the top of a snowy hill and ride an inflatable inner tube downhill, that activity is referred to as snow tubing.</p>
 <p>What used to be an activity reserved for winter periods, can almost be enjoyed all season &ndash; where the appropriate snowmaking technology is available. However, the fun and the thrill of snow tubing is best enjoyed during winter, when there is actually real snow falling from the sky.</p>
@@ -109,22 +76,23 @@ class="post-1135 post type-post status-publish format-standard hentry category-b
 </ul>
 <p>&nbsp;</p>
 
-
-
 <p></p>
+		</div>
+	</div>
+</article>
 
-		
-		
-			</div><!-- .entry-content .clear -->
-</div>
+<section class="m-section m-section-fond" aria-labelledby="titre-suite">
+	<div class="m-conteneur">
+		<div class="m-appel">
+			<div><h2>Ready to ride?</h2><p>The only snow tubing in Utah with banked turns, in Ogden Valley.</p></div>
+			<div class="m-boutons"><a class="m-bouton m-bouton-principal m-bouton-moyen" href="<?= LIEN_RESERVATION ?>">Book a session</a><a class="m-bouton m-bouton-blanc m-bouton-moyen" href="/information/">Plan your visit</a></div>
+		</div>
+		<h2 class="m-titre-section m-titre-petit" id="titre-suite">More from the blog</h2>
+		<div class="m-articles m-articles-deux">
+<?php foreach (articles_autres($page['chemin']) as $a): ?>
+			<?= article_carte($a, 'h3') ?>
 
-	
-</article><!-- #post-## -->
-
-
-	        <nav class="navigation post-navigation" aria-label="Post navigation">
-	                <span class="screen-reader-text">Post navigation</span>
-	                <div class="nav-links"><div class="nav-previous"><a title="How safe is snow tubing ?" href="/how-safe-is-snow-tubing/" rel="prev"><span class="ast-left-arrow">&larr;</span> Previous Post</a></div></div>
-	        </nav>			</main><!-- #main -->
-			
-		
+<?php endforeach ?>
+		</div>
+	</div>
+</section>
