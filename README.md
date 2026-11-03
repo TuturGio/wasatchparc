@@ -1,6 +1,11 @@
 # wasatchparc.com en PHP
 
-Le site est écrit en PHP, puis compilé en HTML statique et publié sur GitHub Pages. Il remplace le WordPress hébergé chez Hostinger.
+Site PHP de wasatchparc.com, hébergé chez Hostinger (compte u475088640). Il remplace le WordPress depuis le 03/11/2026.
+
+**Le serveur est la version de référence.** Les modifications se font directement dans
+`~/domains/wasatchparc.com/wasatchparc-php/` ; `public_html` est un lien vers `wasatchparc-php/public`.
+Après chaque modification, `bash tools/sauvegarder.sh "Description"` enregistre l'état dans git et l'envoie
+sur GitHub (TuturGio/wasatchparc), pour pouvoir reconstruire le site en cas de panne du serveur.
 
 ## Organisation
 
@@ -12,12 +17,17 @@ Le site est écrit en PHP, puis compilé en HTML statique et publié sur GitHub 
 
 ## Modifier le site
 
-```bash
-php tools/build.php
-php -S localhost:8090 -t _site
-```
+1. Modifier le fichier de la page dans `content/` (ou un gabarit dans `includes/`) sur le serveur.
+2. Vérifier la page en ligne.
+3. `bash tools/sauvegarder.sh "Ce qui a changé"`.
 
-Ensuite, un `git push` sur `main` suffit : l'action `.github/workflows/pages.yml` regénère le site et le publie.
+Revenir en arrière : `git log` puis `git revert <commit>` (ou `git checkout <commit> -- <fichier>`), puis sauvegarder.
+
+Retour au WordPress (conservé dans `public_html-wordpress`, base `u475088640_2hTte` intacte) :
+`cd ~/domains/wasatchparc.com && rm public_html && mv public_html-wordpress public_html`.
+Sauvegarde d'avant bascule : `~/sauvegardes/bascule-20261103-1519/`.
+
+`php tools/build.php` génère toujours une version statique dans `_site/` (ancienne publication GitHub Pages).
 
 ## Outils de migration (à lancer une seule fois)
 
