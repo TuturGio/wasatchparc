@@ -9,9 +9,6 @@
 $proj = dirname(__DIR__);
 $sortie = $argv[1] ?? $proj . '/_site';
 require $proj . '/includes/rendu.php';
-if (WEB3FORMS_CLE === '') {
-    fwrite(STDERR, "Attention : WEB3FORMS_CLE est vide dans includes/config.php, le formulaire de contact n'enverra rien.\n");
-}
 
 function copier(string $de, string $vers): void
 {

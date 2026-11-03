@@ -22,6 +22,15 @@ if ($chemin === '/') {
     $fichier = "$contenu/$m[1].php";
 }
 
+// Envoi du formulaire de contact : redirection après succès (la page affiche alors la confirmation),
+// sinon la page est réaffichée avec les erreurs et les valeurs saisies.
+if ($fichier === "$contenu/contact.php" && ($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
+    if ($redirection = contact_traiter($_POST)) {
+        header('Location: ' . $redirection, true, 303);
+        exit;
+    }
+}
+
 if ($fichier === null) {
     http_response_code(404);
     $fichier = "$contenu/404.php";
