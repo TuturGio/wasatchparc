@@ -31,7 +31,7 @@ $menu = [
 <a class="m-lien-evitement" href="#contenu">Skip to content</a>
 <?php if (SAISON_FERMEE): ?>
 <div class="m-saison" role="status">
-	<p><span class="m-saison-point" aria-hidden="true"></span><strong>Closed for the 2025–2026 season</strong> <span class="m-saison-detail">We're making improvements &amp; upgrades. See you next winter!</span></p>
+	<p><span class="m-saison-point" aria-hidden="true"></span><strong>Closed for the 2026–2027 season</strong> <span class="m-saison-detail">We're making improvements &amp; upgrades. See you next winter!</span></p>
 </div>
 <?php endif ?>
 <header class="m-entete">

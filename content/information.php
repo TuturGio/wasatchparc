@@ -108,7 +108,7 @@ HTML,
 			</div>
 			<div class="m-carte m-carte-bordee">
 				<img src="/wp-content/uploads/2024/12/waiver.jpeg" width="320" height="320" alt="" loading="lazy">
-				<div class="m-carte-texte"><h3>Release of liability</h3><p>You will be asked to sign a waiver before riding. Save time and download it now.</p><p><a class="m-bouton m-bouton-clair m-bouton-moyen" href="/wp-content/uploads/2024/12/Liability-waiver.pdf" target="_blank" rel="noopener">Download the waiver (PDF)</a></p></div>
+				<div class="m-carte-texte"><h3>Release of liability</h3><p>You will be asked to sign a waiver before riding.</p></div>
 			</div>
 		</div>
 	</div>
@@ -137,14 +137,6 @@ HTML,
 				<p>Up to 50 people at the same time on the tubing hill.</p>
 				<dl><dt>Price</dt><dd>Call or email us to get a quote</dd><dt>Availability</dt><dd>Not during peak periods &amp; weekends</dd></dl>
 			</div>
-		</div>
-		<div class="m-pointe">
-			<h3>Peak periods <span>(2024–2025 season)</span></h3>
-			<ul>
-				<li>Dec 20, 2024 – Jan 12, 2025</li>
-				<li>Jan 18 – 20, 2025</li>
-				<li>Feb 15 – 17, 2025</li>
-			</ul>
 		</div>
 		<div class="m-boutons">
 			<a class="m-bouton m-bouton-blanc m-bouton-moyen" href="/contact/">Ask for a group quote</a>
