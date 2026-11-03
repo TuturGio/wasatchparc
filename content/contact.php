@@ -41,7 +41,6 @@ HTML,
     'uag' => '@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none !important}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none !important}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none !important}}',
     'entete_transparent' => true,
     'scripts' => <<<'HTML'
-<script src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/spectra-block-positioning.min.js?ver=2.17.0" id="uagb-block-positioning-js-js"></script>
 <script src="/wp-content/uploads/uag-plugin/assets/1000/uag-js-916.js?ver=1792776222" id="uag-script-916-js"></script>
 <script>
 document.getElementById('wpforms-form-1086').addEventListener('submit', function () {
@@ -151,7 +150,7 @@ class="post-916 page type-page status-publish ast-article-single" id="post-916" 
 
 
 
-<figure class="wp-block-image size-full"><img decoding="async" width="400" height="400" src="https://snow-tubing-fun.preview-domain.com/wp-content/uploads/2024/12/plan_OK.png" alt="wasatch parc directions" class="wp-image-1083" srcset="/wp-content/uploads/2024/12/plan_OK.png 400w, /wp-content/uploads/2024/12/plan_OK-300x300.png 300w, /wp-content/uploads/2024/12/plan_OK-150x150.png 150w" sizes="(max-width: 400px) 100vw, 400px" /></figure>
+<figure class="wp-block-image size-full"><img decoding="async" width="400" height="400" src="/wp-content/uploads/2024/12/plan_OK.png" alt="wasatch parc directions" class="wp-image-1083" srcset="/wp-content/uploads/2024/12/plan_OK.png 400w, /wp-content/uploads/2024/12/plan_OK-300x300.png 300w, /wp-content/uploads/2024/12/plan_OK-150x150.png 150w" sizes="(max-width: 400px) 100vw, 400px" /></figure>
 
 
 

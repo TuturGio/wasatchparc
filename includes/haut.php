@@ -7,29 +7,10 @@
 <?= $page['seo'] ?>
 
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.10"}};
-/*! This file is auto-generated */
-!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
-</script>
 <link rel='stylesheet' id='astra-theme-css-css' href='/wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.8.7' media='all' />
 <style id='astra-theme-css-inline-css'>
 <?php readfile(__DIR__ . '/styles/astra-' . $page['mise_en_page'] . '.css') ?></style>
 <link rel='stylesheet' id='astra-google-fonts-css' href='https://fonts.googleapis.com/css?family=Manrope%3A400%2C700%7CPlus+Jakarta+Sans%3A600%2C700&#038;display=fallback&#038;ver=4.8.7' media='all' />
-<style id='wp-emoji-styles-inline-css'>
-
-	img.wp-smiley, img.emoji {
-		display: inline !important;
-		border: none !important;
-		box-shadow: none !important;
-		height: 1em !important;
-		width: 1em !important;
-		margin: 0 0.07em !important;
-		vertical-align: -0.1em !important;
-		background: none !important;
-		padding: 0 !important;
-	}
-</style>
 <link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=6.7.10' media='all' />
 <link rel='stylesheet' id='aioseo/css/src/vue/standalone/blocks/table-of-contents/global.scss-css' href='/wp-content/plugins/all-in-one-seo-pack/dist/Lite/assets/css/table-of-contents/global.e90f6d47.css?ver=4.9.2' media='all' />
 <link rel='stylesheet' id='fontAwesome-css' href='/wp-content/plugins/team-section/assets/css/font-awesome.min.css?ver=6.4.2' media='all' />
@@ -39,13 +20,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
 <link rel='stylesheet' id='theme.css-css' href='/wp-content/plugins/popup-builder/public/css/theme.css?ver=4.3.6' media='all' />
-<?= $page['styles'] ?? '' ?><!--[if IE]>
-<script src="/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.8.7" id="astra-flexibility-js"></script>
-<script id="astra-flexibility-js-after">
-flexibility(document.documentElement);
-</script>
-<![endif]-->
-<script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<?= $page['styles'] ?? '' ?><script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script id="Popup.js-js-before">
 var sgpbPublicUrl = "\/wp-content\/plugins\/popup-builder\/public\/";
@@ -56,7 +31,9 @@ var SGPB_JS_LOCALIZATION = {"imageSupportAlertMessage":"Only image files support
 <script id="PopupBuilder.js-js-before">
 var SGPB_POPUP_PARAMS = {"popupTypeAgeRestriction":"ageRestriction","defaultThemeImages":{"1":"\/wp-content\/plugins\/popup-builder\/public\/img\/theme_1\/close.png","2":"\/wp-content\/plugins\/popup-builder\/public\/img\/theme_2\/close.png","3":"\/wp-content\/plugins\/popup-builder\/public\/img\/theme_3\/close.png","5":"\/wp-content\/plugins\/popup-builder\/public\/img\/theme_5\/close.png","6":"\/wp-content\/plugins\/popup-builder\/public\/img\/theme_6\/close.png"},"homePageUrl":"https:\/\/wasatchparc.com\/","isPreview":false,"convertedIdsReverse":[],"dontShowPopupExpireTime":365,"conditionalJsClasses":[],"disableAnalyticsGeneral":false};
 var SGPB_JS_PACKAGES = {"packages":{"current":1,"free":1,"silver":2,"gold":3,"platinum":4},"extensions":{"geo-targeting":false,"advanced-closing":false}};
-var SGPB_JS_PARAMS = {"ajaxUrl":"https:\/\/wasatchparc.com\/wp-admin\/admin-ajax.php","nonce":"b26f2f6594"};
+var SGPB_JS_PARAMS = {"ajaxUrl":"","nonce":""};
+// Sans WordPress, pas de compteur des ouvertures : la popup ne contacte pas admin-ajax.php quand cette variable existe.
+var SGPB_ANALYTICS_PARAMS = {};
 </script>
 <script src="/wp-content/plugins/popup-builder/public/js/PopupBuilder.js?ver=4.3.6" id="PopupBuilder.js-js"></script>
 <style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><?php if (isset($page['uag'])): ?><style id="uagb-style-conditional-extension"><?= $page['uag'] ?></style><?php endif ?><link rel="icon" href="/wp-content/uploads/2024/12/cropped-cropped-favicon-1-32x32.jpg" sizes="32x32" />

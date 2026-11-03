@@ -31,7 +31,7 @@ HTML,
     'styles' => <<<'HTML'
 <link rel='stylesheet' id='uagb-block-positioning-css-css' href='/wp-content/plugins/ultimate-addons-for-gutenberg/assets/css/spectra-block-positioning.min.css?ver=2.17.0' media='all' />
 <link rel='stylesheet' id='uagb-slick-css-css' href='/wp-content/plugins/ultimate-addons-for-gutenberg/assets/css/slick.min.css?ver=2.17.0' media='all' />
-<link rel='stylesheet' id='uag-style-917-css' href='/wp-content/uploads/uag-plugin/assets/1000/uag-css-917.css?ver=1792776199' media='all' />
+<link rel='stylesheet' id='uag-style-917-css' href='/wp-content/uploads/uag-plugin/assets/1000/uag-css-917.css?ver=1792776199.1' media='all' />
 
 HTML,
     'itemtype' => 'https://schema.org/WebPage',
@@ -45,7 +45,6 @@ HTML,
 
 HTML,
     'scripts' => <<<'HTML'
-<script src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/spectra-block-positioning.min.js?ver=2.17.0" id="uagb-block-positioning-js-js"></script>
 <script src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/testimonial.min.js?ver=2.17.0" id="uagb-testimonial-js-js"></script>
 <script src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/imagesloaded.min.js?ver=2.17.0" id="uagb-imagesloaded-js"></script>
 <script src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/slick.min.js?ver=2.17.0" id="uagb-slick-js-js"></script>

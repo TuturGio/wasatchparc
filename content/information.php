@@ -46,7 +46,6 @@ HTML,
 
 HTML,
     'scripts' => <<<'HTML'
-<script src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/spectra-block-positioning.min.js?ver=2.17.0" id="uagb-block-positioning-js-js"></script>
 <script src="/wp-includes/js/dist/vendor/react.min.js?ver=18.3.1.1" id="react-js"></script>
 <script src="/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.3.1.1" id="react-dom-js"></script>
 <script src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>

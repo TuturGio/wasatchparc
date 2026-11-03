@@ -44,14 +44,5 @@ class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemsco
 var astra = {"break_point":"921","isRtl":"","is_scroll_to_id":"","is_scroll_to_top":"","is_header_footer_builder_active":"1","responsive_cart_click":"flyout"};
 </script>
 <script src="/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.8.7" id="astra-theme-js-js"></script>
-<script type="module" src="/wp-content/plugins/all-in-one-seo-pack/dist/Lite/assets/table-of-contents.95d0dfce.js?ver=4.9.2" id="aioseo/js/src/vue/standalone/blocks/table-of-contents/frontend.js-js"></script>
-<script src="/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
-<script id="starter-templates-zip-preview-js-extra">
-var starter_templates_zip_preview = {"AstColorPaletteVarPrefix":"--ast-global-color-","AstEleColorPaletteVarPrefix":["ast-global-color-0","ast-global-color-1","ast-global-color-2","ast-global-color-3","ast-global-color-4","ast-global-color-5","ast-global-color-6","ast-global-color-7","ast-global-color-8"]};
-</script>
-<script src="/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=06758d4d807d9d22c6ea" id="starter-templates-zip-preview-js"></script>
-<?= $page['scripts'] ?? '' ?>			<script>
-			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
-			</script>
-<?= $page['fin'] ?></body>
+<?= $page['scripts'] ?? '' ?><?= $page['fin'] ?></body>
 </html>
