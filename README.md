@@ -27,7 +27,7 @@ Retour au WordPress (conservé dans `public_html-wordpress`, base `u475088640_2h
 `cd ~/domains/wasatchparc.com && rm public_html && mv public_html-wordpress public_html`.
 Sauvegarde d'avant bascule : `~/sauvegardes/bascule-20261103-1519/`.
 
-`php tools/build.php` génère toujours une version statique dans `_site/` (ancienne publication GitHub Pages).
+`php tools/build.php` génère encore une version statique dans `_site/` (ancienne publication GitHub Pages, arrêtée le 03/11/2026).
 
 ## Outils de migration (à lancer une seule fois)
 
