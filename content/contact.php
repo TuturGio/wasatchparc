@@ -43,11 +43,13 @@ HTML,
     'scripts' => <<<'HTML'
 <script src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/spectra-block-positioning.min.js?ver=2.17.0" id="uagb-block-positioning-js-js"></script>
 <script src="/wp-content/uploads/uag-plugin/assets/1000/uag-js-916.js?ver=1792776222" id="uag-script-916-js"></script>
-<script src="/wp-content/plugins/wpforms-lite/assets/lib/jquery.validate.min.js?ver=1.21.0" id="wpforms-validation-js"></script>
-<script src="/wp-content/plugins/wpforms-lite/assets/lib/mailcheck.min.js?ver=1.1.2" id="wpforms-mailcheck-js"></script>
-<script src="/wp-content/plugins/wpforms-lite/assets/lib/punycode.min.js?ver=1.0.0" id="wpforms-punycode-js"></script>
-<script src="/wp-content/plugins/wpforms-lite/assets/js/share/utils.min.js?ver=1.9.4.1" id="wpforms-generic-utils-js"></script>
-<script src="/wp-content/plugins/wpforms-lite/assets/js/frontend/wpforms.min.js?ver=1.9.4.1" id="wpforms-js"></script>
+<script>
+document.getElementById('wpforms-form-1086').addEventListener('submit', function () {
+	var b = document.getElementById('wpforms-submit-1086');
+	b.disabled = true;
+	b.textContent = b.dataset.altText;
+});
+</script>
 <script>
 if (new URLSearchParams(location.search).has('sent')) {
 	document.getElementById('wpforms-1086').innerHTML = '<div class="wpforms-confirmation-container-full wpforms-confirmation-scroll" id="wpforms-confirmation-1086" role="alert"><p>Thanks for contacting us! We will be in touch with you shortly.</p></div>';
@@ -56,11 +58,6 @@ if (new URLSearchParams(location.search).has('sent')) {
 
 HTML,
     'fin' => <<<'HTML'
-			<script type='text/javascript'>
-/* <![CDATA[ */
-var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_minimum_price":"Amount entered is less than the required minimum.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again.","val_turnstile_fail_msg":"Cloudflare Turnstile verification failed, please try again later.","val_inputmask_incomplete":"Please fill out the field in required format.","uuid_cookie":"","locale":"en","country":"","country_list_label":"Country list","wpforms_plugin_url":"\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"https:\/\/wasatchparc.com\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1","currency_code":"USD","currency_thousands":",","currency_decimals":"2","currency_decimal":".","currency_symbol":"$","currency_symbol_pos":"left","val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number.","error_updating_token":"Error updating token. Please try again or contact support if the issue persists.","network_error":"Network error or server is unreachable. Check your connection or try again later.","token_cache_lifetime":"86400","hn_data":{"1086":4}}
-/* ]]> */
-</script>
 	
 HTML,
 ];
@@ -92,7 +89,7 @@ class="post-916 page type-page status-publish ast-article-single" id="post-916" 
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><div class="wpforms-container " id="wpforms-1086"><form id="wpforms-form-1086" class="wpforms-validate wpforms-form" data-formid="1086" method="post" action="/contact/#wpforms-1086" novalidate><?= contact_message() ?><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-1086-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1"><label class="wpforms-field-label">Name <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-1086-field_1" class="wpforms-field-name-first wpforms-field-required" name="prenom" value="<?= contact_valeur('prenom') ?>" required><?= contact_erreur('prenom') ?><label for="wpforms-1086-field_1" class="wpforms-field-sublabel after">First</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-1086-field_1-last" class="wpforms-field-name-last wpforms-field-required" name="nom" value="<?= contact_valeur('nom') ?>" required><?= contact_erreur('nom') ?><label for="wpforms-1086-field_1-last" class="wpforms-field-sublabel after">Last</label></div></div></div>		<div id="wpforms-1086-field_4-container"
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><div class="wpforms-container " id="wpforms-1086"><form id="wpforms-form-1086" class="wpforms-validate wpforms-form" data-formid="1086" method="post" action="/contact/#wpforms-1086"><?= contact_message() ?><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-1086-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1"><label class="wpforms-field-label">Name <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-1086-field_1" class="wpforms-field-name-first wpforms-field-required" name="prenom" value="<?= contact_valeur('prenom') ?>" required><?= contact_erreur('prenom') ?><label for="wpforms-1086-field_1" class="wpforms-field-sublabel after">First</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-1086-field_1-last" class="wpforms-field-name-last wpforms-field-required" name="nom" value="<?= contact_valeur('nom') ?>" required><?= contact_erreur('nom') ?><label for="wpforms-1086-field_1-last" class="wpforms-field-sublabel after">Last</label></div></div></div>		<div id="wpforms-1086-field_4-container"
 			class="wpforms-field wpforms-field-text"
 			data-field-type="text"
 			data-field-id="4"
