@@ -22,7 +22,17 @@
 		</div>
 	</div>
 </footer>
-<div class="m-reserver-mobile"><a class="m-bouton m-bouton-principal" href="<?= LIEN_RESERVATION ?>">Book now</a></div>
+<div class="m-reserver-mobile"><a class="m-bouton m-bouton-principal" href="<?= LIEN_RESERVATION ?>" target="_blank" rel="noopener">Book now</a></div>
+<script>
+// Bouton « Book now » fixe du mobile : la réservation s'ouvre dans un nouvel onglet. Le script FareHarbor
+// intercepte sinon le clic et quitte le site. Cet écouteur, posé sur window avant lui, passe en premier
+// et arrête le clic ; le lien (target="_blank") s'ouvre alors normalement.
+window.addEventListener('click', function (e) {
+	if (e.target.closest && e.target.closest('.m-reserver-mobile a')) {
+		e.stopImmediatePropagation();
+	}
+}, true);
+</script>
 <script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
 <script>
 // Menu mobile : ouverture et fermeture par le bouton ☰.
