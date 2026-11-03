@@ -11,9 +11,11 @@ function rendre(string $fichier): string
     ob_start();
     include $fichier;              // définit $page et écrit le contenu de la zone #primary
     $contenu = ob_get_clean();
+    // Gabarit : « moderne » (nouvelle charte, includes/moderne/) ou celui repris de WordPress (Astra).
+    $dossier = ($page['gabarit'] ?? '') === 'moderne' ? __DIR__ . '/moderne' : __DIR__;
     ob_start();
-    include __DIR__ . '/haut.php';
+    include $dossier . '/haut.php';
     echo $contenu;
-    include __DIR__ . '/bas.php';
+    include $dossier . '/bas.php';
     return ob_get_clean();
 }

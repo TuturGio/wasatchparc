@@ -13,3 +13,8 @@ function prive(string $cle): mixed
     $reglages ??= is_file(FICHIER_PRIVE) ? (array) require FICHIER_PRIVE : [];
     return $reglages[$cle] ?? null;
 }
+
+// Pages à la nouvelle charte (includes/moderne/).
+const SAISON_FERMEE = true;   // bandeau « Closed for the 2025–2026 season » en haut des pages ; false pour le retirer
+const LIEN_RESERVATION = 'https://fareharbor.com/embeds/book/wasatchparc/?full-items=yes';
+const LIEN_CARTES_CADEAUX = 'https://fareharbor.com/embeds/book/wasatchparc/?full-items=yes&flow=5518';

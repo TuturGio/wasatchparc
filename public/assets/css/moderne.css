@@ -1,0 +1,272 @@
+/* Nouvelle charte de wasatchparc.com (accueil, contact) : gabarit includes/moderne/. */
+
+:root {
+	--m-bleu: #0061F2;
+	--m-bleu-fonce: #0050C8;
+	--m-lien: #0057D9;
+	--m-marine: #0B1B33;
+	--m-texte: #0F172A;
+	--m-gris: #475569;
+	--m-gris-clair: #CBD5E1;
+	--m-bord: #E2E8F0;
+	--m-glace: #E7F6FF;
+	--m-fond: #F4F9FE;
+	--m-titre: 'Plus Jakarta Sans', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body.m-page { margin: 0; font-family: 'Manrope', system-ui, sans-serif; color: var(--m-texte); background: #fff; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.m-page img { max-width: 100%; }
+.m-page a { color: var(--m-lien); }
+.m-page a:hover { color: #003F9E; }
+.m-page h1, .m-page h2, .m-page h3 { font-family: var(--m-titre); font-weight: 800; letter-spacing: -0.015em; margin: 0; color: inherit; }
+.m-page p { margin: 0; }
+.m-conteneur { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+.m-lien-evitement { position: absolute; left: -9999px; top: 8px; z-index: 100; background: #fff; padding: 12px 16px; border-radius: 8px; }
+.m-lien-evitement:focus { left: 8px; }
+.m-page :focus-visible { outline: 3px solid #93C5FD; outline-offset: 2px; }
+
+/* Boutons */
+.m-bouton { display: inline-block; font-weight: 700; font-size: 17px; line-height: 1.2; padding: 18px 34px; border-radius: 999px; text-decoration: none; text-align: center; border: 1px solid transparent; cursor: pointer; transition: background-color .15s, transform .15s; }
+.m-bouton:hover { transform: translateY(-1px); }
+.m-page .m-bouton-principal { background: var(--m-bleu); color: #fff; }
+.m-page .m-bouton-principal:hover { background: var(--m-bleu-fonce); color: #fff; }
+.m-page .m-bouton-blanc { background: #fff; color: var(--m-marine); }
+.m-page .m-bouton-blanc:hover { background: var(--m-glace); color: var(--m-marine); }
+.m-page .m-bouton-clair { background: var(--m-glace); color: var(--m-marine); }
+.m-page .m-bouton-clair:hover { background: #D3ECFF; color: var(--m-marine); }
+.m-page .m-bouton-contour { background: #fff; color: var(--m-marine); border-color: var(--m-gris-clair); }
+.m-bouton-moyen { font-size: 16px; padding: 16px 28px; }
+.m-bouton-plein { display: block; width: 100%; }
+
+/* Bandeau de saison */
+.m-saison { background: var(--m-marine); color: #fff; font-size: 15px; text-align: center; padding: 12px 20px; }
+.m-saison p { display: inline-flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; justify-content: center; }
+.m-saison-point { width: 8px; height: 8px; border-radius: 4px; background: #FBBF24; }
+.m-saison-detail { color: var(--m-gris-clair); }
+
+/* En-tête posé sur la photo de la première section */
+.m-entete { position: absolute; left: 0; right: 0; z-index: 20; color: #fff; }
+.m-entete-ligne { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 24px; padding-bottom: 24px; }
+.m-logo { display: inline-flex; background: #fff; border-radius: 16px; padding: 14px 24px; }
+.m-logo img { display: block; width: 300px; height: auto; }
+.m-logo-petit { border-radius: 12px; padding: 8px 14px; }
+.m-logo-petit img { width: 180px; }
+.m-menu { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.m-page .m-menu a:not(.m-bouton) { color: #fff; text-decoration: none; font-weight: 600; font-size: 16px; padding: 12px 14px; }
+.m-page .m-menu a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.m-menu .m-bouton { margin-left: 8px; font-size: 15px; padding: 13px 24px; }
+.m-menu-bouton { display: none; width: 48px; height: 48px; border-radius: 24px; border: 0; background: rgba(255,255,255,.18); color: #fff; align-items: center; justify-content: center; cursor: pointer; }
+
+/* Photos de fond */
+.m-photo { position: relative; color: #fff; background-color: var(--m-marine); background-size: cover; background-position: center; }
+.m-accueil-hero { background-image: linear-gradient(180deg, rgba(8,20,40,.55) 0%, rgba(8,20,40,.25) 45%, rgba(8,20,40,.85) 100%), url(/wp-content/uploads/2024/12/home-snow-tubing.jpg); background-position: center 35%; min-height: 760px; display: flex; flex-direction: column; justify-content: flex-end; }
+.m-bande-groupes { background-image: linear-gradient(90deg, rgba(8,20,40,.88) 0%, rgba(8,20,40,.55) 55%, rgba(8,20,40,.15) 100%), url(/wp-content/uploads/2024/12/tubing-lift.jpg); }
+.m-contact-hero { background-image: linear-gradient(180deg, rgba(8,20,40,.65) 0%, rgba(8,20,40,.85) 100%), url(/wp-content/uploads/2024/12/tubing-lift.jpg); background-position: center 40%; }
+
+/* Textes de section */
+.m-surtitre { color: var(--m-lien); font-weight: 700; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 12px !important; }
+.m-photo .m-surtitre { color: #93C5FD; }
+.m-pastille { display: inline-block; font-weight: 700; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.35); padding: 8px 14px; border-radius: 999px; }
+.m-titre-section { font-size: 48px; line-height: 1.1; }
+.m-intro { color: var(--m-gris); font-size: 17px; }
+.m-section { padding: 104px 0; }
+.m-section-fond { background: var(--m-fond); }
+
+/* Accueil : haut de page */
+.m-hero-contenu { padding-top: 160px; padding-bottom: 72px; display: flex; flex-direction: column; gap: 28px; align-items: flex-start; }
+.m-hero-contenu h1 { max-width: 860px; font-size: 76px; line-height: 1.02; letter-spacing: -0.02em; }
+.m-hero-texte { max-width: 600px; font-size: 20px; line-height: 1.55; color: #E2E8F0; }
+.m-boutons { display: flex; flex-wrap: wrap; gap: 14px; }
+
+/* Accueil : points forts */
+.m-atouts { position: relative; margin-top: -56px; z-index: 2; }
+.m-atouts-grille { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); background: #fff; border-radius: 24px; box-shadow: 0 20px 50px rgba(11,27,51,.14); overflow: hidden; }
+.m-atout { padding: 28px 32px; display: flex; gap: 16px; align-items: flex-start; }
+.m-atout + .m-atout { border-left: 1px solid var(--m-bord); }
+.m-atout h3 { font-size: 18px; font-weight: 700; letter-spacing: 0; margin-bottom: 4px; }
+.m-atout p { color: var(--m-gris); font-size: 15px; line-height: 1.5; }
+.m-icone { flex: none; width: 48px; height: 48px; border-radius: 14px; background: var(--m-glace); display: flex; align-items: center; justify-content: center; color: var(--m-lien); }
+
+/* Accueil : tarifs */
+.m-tarifs-entete { display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: flex-end; justify-content: space-between; margin-bottom: 48px; }
+.m-tarifs-entete .m-intro { max-width: 420px; }
+.m-tarifs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.m-tarif { border: 1px solid var(--m-bord); border-radius: 24px; padding: 36px; display: flex; flex-direction: column; gap: 20px; }
+.m-tarif h3 { font-size: 22px; font-weight: 700; letter-spacing: 0; margin-bottom: 6px; }
+.m-tarif-detail { color: var(--m-gris); font-size: 15px; }
+.m-prix { font-family: var(--m-titre); font-weight: 800; font-size: 52px; line-height: 1.1; letter-spacing: -0.02em; }
+.m-prix span { font-family: 'Manrope', sans-serif; font-weight: 600; font-size: 16px; color: var(--m-gris); letter-spacing: 0; }
+.m-tarif .m-bouton, .m-tarif-note { margin-top: auto; }
+.m-tarif-note { padding: 14px 16px; border-radius: 14px; background: #F1F5F9; color: #334155; font-size: 15px; font-weight: 600; text-align: center; }
+.m-tarif-fonce { background: var(--m-marine); border-color: var(--m-marine); color: #fff; }
+.m-tarif-fonce .m-tarif-detail, .m-tarif-fonce .m-prix span { color: var(--m-gris-clair); }
+.m-cadeaux { margin-top: 32px !important; color: var(--m-gris); font-size: 15px; }
+
+/* Accueil : à savoir */
+.m-cartes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 40px; }
+.m-carte { background: #fff; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column; }
+.m-carte img { width: 100%; height: 220px; object-fit: cover; display: block; }
+.m-carte-texte { padding: 28px; display: flex; flex-direction: column; gap: 8px; }
+.m-carte h3 { font-size: 20px; font-weight: 700; letter-spacing: 0; }
+.m-carte p { color: var(--m-gris); font-size: 15px; }
+
+/* Accueil : groupes */
+.m-groupes .m-titre-section { font-size: 44px; max-width: 560px; }
+.m-offres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; max-width: 980px; margin: 36px 0; }
+.m-offre { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.25); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 8px; }
+.m-offre .m-offre-chiffre, .m-encart .m-offre-chiffre { font-family: var(--m-titre); font-weight: 800; font-size: 32px; line-height: 1.2; color: inherit; }
+.m-offre h3 { font-family: 'Manrope', sans-serif; font-size: 17px; font-weight: 700; letter-spacing: 0; }
+.m-offre p { color: #E2E8F0; font-size: 15px; line-height: 1.55; }
+.m-groupes-note { color: var(--m-gris-clair); font-size: 14px; }
+.m-page .m-photo a:not(.m-bouton) { color: #fff; }
+
+/* Accueil : avis et vidéo */
+.m-deux-colonnes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px; align-items: center; }
+.m-avis { margin: 0; display: flex; flex-direction: column; gap: 24px; }
+.m-avis blockquote { margin: 0; font-family: var(--m-titre); font-weight: 700; font-size: 34px; line-height: 1.3; letter-spacing: -0.01em; }
+.m-avis figcaption { color: var(--m-gris); font-weight: 600; }
+.m-video { position: relative; border-radius: 24px; overflow: hidden; aspect-ratio: 16 / 10; background: var(--m-marine); }
+.m-video a { position: absolute; inset: 0; display: block; }
+.m-video img { width: 100%; height: 100%; object-fit: cover; opacity: .6; display: block; }
+.m-video-lecture { position: absolute; left: 50%; top: 50%; width: 84px; height: 84px; margin: -42px 0 0 -42px; border-radius: 42px; background: #fff; display: flex; align-items: center; justify-content: center; transition: transform .15s; }
+.m-video a:hover .m-video-lecture { transform: scale(1.06); }
+.m-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.m-video-legende { margin-top: 16px !important; font-weight: 700; font-size: 17px; }
+.m-video-legende span { font-weight: 500; color: var(--m-gris); }
+
+/* Accueil : venir */
+.m-infos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 28px 0; }
+.m-infos h3 { font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0; margin-bottom: 6px; }
+.m-infos p { color: var(--m-gris); font-size: 15px; }
+.m-plan { background: #fff; border-radius: 32px; padding: 32px; display: flex; justify-content: center; }
+.m-plan img { width: 100%; max-width: 420px; height: auto; display: block; }
+
+/* Contact */
+.m-contact-hero .m-conteneur { padding-top: 160px; padding-bottom: 160px; display: flex; flex-direction: column; gap: 18px; }
+.m-contact-hero h1 { font-size: 68px; line-height: 1.05; letter-spacing: -0.02em; }
+.m-contact-hero .m-hero-texte { max-width: 560px; font-size: 19px; }
+.m-contact-corps { background: var(--m-fond); padding-bottom: 96px; }
+.m-contact-grille { display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; }
+.m-formulaire { flex: 999 1 560px; min-width: 0; margin-top: -104px; background: #fff; border-radius: 28px; box-shadow: 0 24px 60px rgba(11,27,51,.14); padding: 44px; display: flex; flex-direction: column; gap: 22px; position: relative; }
+.m-formulaire h2 { font-size: 30px; }
+.m-champs-duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.m-champ { display: flex; flex-direction: column; gap: 8px; }
+.m-champ label { font-weight: 700; font-size: 15px; }
+.m-requis { color: #B91C1C; }
+.m-champ input, .m-champ textarea { font: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid var(--m-gris-clair); border-radius: 14px; background: #fff; color: var(--m-texte); width: 100%; }
+.m-champ textarea { resize: vertical; min-height: 150px; }
+.m-champ input:focus, .m-champ textarea:focus { outline: 3px solid #93C5FD; outline-offset: 1px; border-color: var(--m-lien); }
+.m-champ-piege { position: absolute !important; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.m-formulaire-pied { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+.m-formulaire-pied p { color: var(--m-gris); font-size: 14px; }
+.m-formulaire button { font: inherit; font-weight: 700; font-size: 16px; padding: 16px 40px; }
+.m-formulaire button:disabled { opacity: .7; cursor: wait; transform: none; }
+/* Messages du formulaire (classes produites par includes/contact.php) */
+.m-formulaire .wpforms-error-container { background: #FEF2F2; border: 1px solid #FCA5A5; color: #991B1B; border-radius: 14px; padding: 14px 16px; font-weight: 600; font-size: 15px; }
+.m-formulaire label.wpforms-error { color: #B91C1C; font-weight: 600; font-size: 14px; }
+.m-confirmation { background: #ECFDF5; border: 1px solid #6EE7B7; color: #065F46; border-radius: 18px; padding: 24px; font-size: 17px; font-weight: 600; }
+.m-coordonnees { flex: 1 1 340px; min-width: 0; margin-top: -104px; display: flex; flex-direction: column; gap: 16px; position: relative; }
+.m-coordonnees-bloc { background: var(--m-marine); color: #fff; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 22px; }
+.m-page .m-coordonnee { display: flex; gap: 14px; align-items: flex-start; color: #fff; text-decoration: none; }
+.m-page a.m-coordonnee:hover { color: #fff; }
+.m-coordonnee .m-icone { background: rgba(255,255,255,.12); color: #fff; }
+.m-coordonnee small { display: block; color: var(--m-gris-clair); font-size: 14px; }
+.m-coordonnee strong { display: block; font-size: 18px; line-height: 1.4; overflow-wrap: break-word; }
+.m-groupes-contact { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.m-groupes-contact h2 { font-size: 32px; line-height: 1.15; margin-bottom: 10px; }
+.m-encart { border: 1px solid var(--m-bord); border-radius: 22px; padding: 26px; display: flex; flex-direction: column; gap: 8px; }
+.m-encart .m-offre-chiffre { font-size: 26px; }
+.m-encart h3 { font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0; }
+.m-encart p { color: var(--m-gris); font-size: 15px; }
+
+/* Pied de page */
+.m-pied { background: var(--m-marine); color: var(--m-gris-clair); }
+.m-pied .m-conteneur { padding-top: 64px; padding-bottom: 40px; }
+.m-pied-haut { display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+.m-pied-marque { display: flex; flex-direction: column; gap: 16px; max-width: 360px; align-items: flex-start; font-size: 15px; }
+.m-pied-menu { display: flex; flex-wrap: wrap; gap: 8px 32px; }
+.m-page .m-pied a { color: #fff; }
+.m-page .m-pied-menu a { text-decoration: none; font-weight: 600; font-size: 15px; padding: 10px 0; }
+.m-pied-bas { border-top: 1px solid rgba(255,255,255,.15); padding-top: 24px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between; font-size: 14px; }
+.m-reserver-mobile { display: none; }
+
+/* Tablette */
+@media (max-width: 1024px) {
+	.m-hero-contenu h1 { font-size: 60px; }
+	.m-tarifs, .m-cartes, .m-offres { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.m-groupes-contact { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.m-groupes-contact > div:first-child { grid-column: 1 / -1; }
+}
+
+/* Menu replié */
+@media (max-width: 900px) {
+	.m-menu-bouton { display: flex; }
+	.m-menu { display: none; position: absolute; top: 100%; left: 16px; right: 16px; flex-direction: column; align-items: stretch; gap: 0; background: #fff; border-radius: 20px; padding: 12px; box-shadow: 0 20px 50px rgba(11,27,51,.25); }
+	.m-menu-ouvert .m-menu { display: flex; }
+	.m-page .m-menu a:not(.m-bouton) { color: var(--m-texte); padding: 14px 16px; border-radius: 12px; }
+	.m-page .m-menu a:not(.m-bouton):hover { background: var(--m-fond); }
+	.m-menu .m-bouton { margin: 8px 0 0; padding: 16px; }
+	.m-entete-ligne { position: relative; }
+}
+
+/* Téléphone */
+@media (max-width: 700px) {
+	body.m-page { padding-bottom: 80px; }
+	.m-conteneur { padding: 0 16px; }
+	.m-entete-ligne { padding-top: 16px; padding-bottom: 16px; }
+	.m-logo { border-radius: 14px; padding: 11px 16px; }
+	.m-logo img { width: 230px; }
+	.m-logo-petit img { width: 150px; }
+	.m-saison { font-size: 14px; padding: 10px 16px; }
+	.m-saison-detail { display: none; }
+	.m-section { padding: 56px 0; }
+	.m-titre-section, .m-groupes .m-titre-section { font-size: 32px; }
+	.m-accueil-hero { min-height: 640px; background-position: 40% center; background-image: linear-gradient(180deg, rgba(8,20,40,.55) 0%, rgba(8,20,40,.45) 40%, rgba(8,20,40,.9) 100%), url(/wp-content/uploads/2024/12/home-snow-tubing.jpg); }
+	.m-hero-contenu { padding-top: 120px; padding-bottom: 36px; gap: 18px; align-items: stretch; }
+	.m-hero-contenu .m-pastille { align-self: flex-start; font-size: 12px; padding: 7px 12px; }
+	.m-hero-contenu h1 { font-size: 40px; line-height: 1.05; }
+	.m-hero-texte { font-size: 16px; }
+	.m-hero-contenu .m-boutons { flex-direction: column; }
+	.m-atouts { margin-top: 24px; }
+	.m-atouts-grille { grid-template-columns: 1fr; border-radius: 20px; box-shadow: 0 12px 32px rgba(11,27,51,.12); }
+	.m-atout { padding: 18px 20px; align-items: center; }
+	.m-atout + .m-atout { border-left: 0; border-top: 1px solid var(--m-bord); }
+	.m-atout .m-icone { width: 40px; height: 40px; border-radius: 12px; }
+	.m-tarifs-entete { margin-bottom: 24px; }
+	.m-tarifs, .m-cartes, .m-offres, .m-deux-colonnes, .m-infos, .m-champs-duo, .m-groupes-contact { grid-template-columns: 1fr; }
+	.m-tarifs { gap: 16px; }
+	.m-tarif { padding: 24px; gap: 14px; border-radius: 20px; }
+	.m-prix { font-size: 40px; }
+	.m-cartes { gap: 16px; margin-top: 24px; }
+	.m-carte { flex-direction: row; align-items: center; gap: 14px; padding: 14px; border-radius: 20px; }
+	.m-carte img { width: 72px; height: 72px; border-radius: 14px; flex: none; }
+	.m-carte-texte { padding: 0; gap: 4px; }
+	.m-carte h3 { font-size: 16px; }
+	.m-carte p { font-size: 14px; line-height: 1.5; }
+	.m-deux-colonnes { gap: 40px; }
+	.m-avis blockquote { font-size: 24px; }
+	.m-plan { border-radius: 24px; padding: 20px; }
+	.m-contact-hero .m-conteneur { padding-top: 120px; padding-bottom: 104px; }
+	.m-contact-hero h1 { font-size: 44px; }
+	.m-contact-hero .m-hero-texte { font-size: 16px; }
+	.m-formulaire, .m-coordonnees { flex-basis: 100%; }
+	.m-formulaire { margin-top: -64px; padding: 24px; border-radius: 24px; }
+	.m-formulaire h2 { font-size: 24px; }
+	.m-formulaire button { width: 100%; }
+	.m-coordonnees { margin-top: 0; }
+	.m-coordonnees-bloc { border-radius: 24px; padding: 24px; }
+	.m-reserver-mobile { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; padding: 12px 16px; background: rgba(255,255,255,.96); border-top: 1px solid var(--m-bord); }
+	.m-reserver-mobile .m-bouton { display: block; padding: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.m-bouton, .m-video-lecture { transition: none; }
+	.m-bouton:hover { transform: none; }
+}
+
+/* Pas de bouton « Book now » fixe sous le formulaire de contact */
+@media (max-width: 700px) {
+	body.m-contact { padding-bottom: 0; }
+	.m-contact .m-reserver-mobile { display: none; }
+}

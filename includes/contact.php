@@ -230,7 +230,7 @@ function contact_traiter(array $post): ?string
         contact_etat(['statut' => 'echec', 'valeurs' => $valeurs, 'erreurs' => []]);
         return null;
     }
-    return '/contact/?sent=1#wpforms-1086';
+    return '/contact/?sent=1#formulaire';
 }
 
 /** « Nom » <adresse> : nom entre guillemets (ASCII) ou encodé RFC 2047 (UTF-8). */

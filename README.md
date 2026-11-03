@@ -11,6 +11,7 @@ sur GitHub (TuturGio/wasatchparc), pour pouvoir reconstruire le site en cas de p
 
 - `content/` contient une page par fichier. Chaque fichier définit le tableau `$page` (SEO, mise en page, scripts), puis le contenu de la zone `#primary`.
 - `includes/haut.php` et `includes/bas.php` sont les gabarits communs : `<head>`, en-tête, menu, pied de page et scripts.
+- `includes/moderne/` (haut.php, bas.php) et `public/assets/css/moderne.css` : la nouvelle charte, utilisée par les pages dont `$page` contient `'gabarit' => 'moderne'` (accueil et contact depuis le 03/11/2026). Réglages dans `includes/config.php` : `SAISON_FERMEE` (bandeau de saison), `LIEN_RESERVATION`, `LIEN_CARTES_CADEAUX`.
 - `includes/functions.php` contient le logo et le menu (l'entrée active est calculée).
 - `includes/config.php` contient la clé Web3Forms du formulaire de contact.
 - `public/` est copié tel quel. On y trouve les images, CSS et JS repris de WordPress (aux mêmes chemins `wp-content/…`), ainsi que `CNAME`, `robots.txt` et `sitemap.xml`.

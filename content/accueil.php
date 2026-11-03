@@ -1,6 +1,8 @@
 <?php
 $page = [
     'chemin' => '/',
+    'nom' => 'accueil',
+    'gabarit' => 'moderne',
     'seo' => <<<'HTML'
 	<title>Wasatch Parc Snow Tubing - The only with banked turns !</title>
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
@@ -15,211 +17,148 @@ $page = [
 		<meta property="og:title" content="Wasatch Parc Snow Tubing - The only with banked turns !" />
 		<meta property="og:description" content="The only snow tubing with banked turns. Come enjoy the snow and these beautiful mountains in Ogden Valley. Are you ready for the best snow tubing in Utah ?" />
 		<meta property="og:url" content="https://wasatchparc.com/" />
-		<meta property="og:image" content="/wp-content/uploads/2024/12/logo-bracelets.png" />
-		<meta property="og:image:secure_url" content="/wp-content/uploads/2024/12/logo-bracelets.png" />
+		<meta property="og:image" content="https://wasatchparc.com/wp-content/uploads/2024/12/logo-bracelets.png" />
+		<meta property="og:image:secure_url" content="https://wasatchparc.com/wp-content/uploads/2024/12/logo-bracelets.png" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Wasatch Parc Snow Tubing - The only with banked turns !" />
 		<meta name="twitter:description" content="The only snow tubing with banked turns. Come enjoy the snow and these beautiful mountains in Ogden Valley. Are you ready for the best snow tubing in Utah ?" />
-		<meta name="twitter:image" content="/wp-content/uploads/2024/12/logo-bracelets.png" />
+		<meta name="twitter:image" content="https://wasatchparc.com/wp-content/uploads/2024/12/logo-bracelets.png" />
 		<script type="application/ld+json" class="aioseo-schema">
 			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/wasatchparc.com\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/wasatchparc.com#listItem","position":1,"name":"Home"}]},{"@type":"Organization","@id":"https:\/\/wasatchparc.com\/#organization","name":"Wasatch Parc Snow Tubing","description":"Best tubing park in Utah","url":"https:\/\/wasatchparc.com\/","logo":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2024\/12\/logo-bracelets.png","@id":"https:\/\/wasatchparc.com\/#organizationLogo","width":1000,"height":100,"caption":"logo wasatch parc"},"image":{"@id":"https:\/\/wasatchparc.com\/#organizationLogo"}},{"@type":"WebPage","@id":"https:\/\/wasatchparc.com\/#webpage","url":"https:\/\/wasatchparc.com\/","name":"Wasatch Parc Snow Tubing - The only with banked turns !","description":"The only snow tubing with banked turns. Come enjoy the snow and these beautiful mountains in Ogden Valley. Are you ready for the best snow tubing in Utah ?","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/wasatchparc.com\/#website"},"breadcrumb":{"@id":"https:\/\/wasatchparc.com\/#breadcrumblist"},"datePublished":"2024-12-03T22:06:25+00:00","dateModified":"2025-01-06T04:23:58+00:00"},{"@type":"WebSite","@id":"https:\/\/wasatchparc.com\/#website","url":"https:\/\/wasatchparc.com\/","name":"Wasatch Parc Snow Tubing","description":"Best tubing park in Utah","inLanguage":"en-US","publisher":{"@id":"https:\/\/wasatchparc.com\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
 HTML,
-    'mise_en_page' => 'pleine-largeur',
-    'styles' => <<<'HTML'
-<link rel='stylesheet' id='uagb-block-positioning-css-css' href='/wp-content/plugins/ultimate-addons-for-gutenberg/assets/css/spectra-block-positioning.min.css?ver=2.17.0' media='all' />
-<link rel='stylesheet' id='uagb-slick-css-css' href='/wp-content/plugins/ultimate-addons-for-gutenberg/assets/css/slick.min.css?ver=2.17.0' media='all' />
-<link rel='stylesheet' id='uag-style-917-css' href='/wp-content/uploads/uag-plugin/assets/1000/uag-css-917.css?ver=1792776199.1' media='all' />
-
-HTML,
-    'itemtype' => 'https://schema.org/WebPage',
-    'classes' => 'home page-template-default page page-id-917 wp-custom-logo ast-desktop ast-page-builder-template ast-no-sidebar astra-4.8.7 ast-single-post ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-theme-transparent-header ast-hfb-header',
-    'uag' => '@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none !important}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none !important}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none !important}}',
-    'entete_transparent' => true,
-    'styles_bas' => <<<'HTML'
-<style id='core-block-supports-inline-css'>
-.wp-elements-27ebd2160c246fe6a741eb96576c2f17 a:where(:not(.wp-element-button)){color:#000000;}.wp-elements-c15d1dbf429b515fde4a0061a649d043 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--ast-global-color-5);}.wp-elements-5f4225eeec0df1e6a38e17ce357d5e60 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--ast-global-color-5);}.wp-container-core-buttons-is-layout-1{justify-content:center;}.wp-elements-aa9ff5128ef5b9a1a472cf33bb8138ab a:where(:not(.wp-element-button)){color:#000000;}.wp-elements-f5ef5b30c4e8eb52173442348cb6a951 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--ast-global-color-0);}.wp-elements-218ec3a79ba2baf58d310ad2dfd8275e a:where(:not(.wp-element-button)){color:var(--wp--preset--color--ast-global-color-0);}.wp-container-core-buttons-is-layout-2{justify-content:center;}.wp-elements-80793fdb23643f00af2b9f94875d35bc a:where(:not(.wp-element-button)){color:#000000;}.wp-elements-644516ccb3734fdea69f5f0ebaff11e9 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--ast-global-color-5);}.wp-elements-1f2e90249b16bc6218048b083e933287 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--ast-global-color-5);}.wp-container-core-buttons-is-layout-3{justify-content:center;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}
-</style>
-
-HTML,
-    'scripts' => <<<'HTML'
-<script src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/testimonial.min.js?ver=2.17.0" id="uagb-testimonial-js-js"></script>
-<script src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/imagesloaded.min.js?ver=2.17.0" id="uagb-imagesloaded-js"></script>
-<script src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/slick.min.js?ver=2.17.0" id="uagb-slick-js-js"></script>
-<script src="/wp-content/uploads/uag-plugin/assets/1000/uag-js-917.js?ver=1792776199" id="uag-script-917-js"></script>
-
-HTML,
-    'fin' => '				',
 ];
 ?>
 
-
-		
-					<main id="main" class="site-main">
-				<article
-class="post-917 page type-page status-publish ast-article-single" id="post-917" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
-	
-				<header class="entry-header ast-no-title ast-header-without-markup">
-							</header> <!-- .entry-header -->
-		
-<div class="entry-content clear"
-	data-ast-blocks-layout="true" itemprop="text">
-
-	
-	
-<div class="wp-block-uagb-container uagb-block-80f8b66e alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap">
-<div class="wp-block-uagb-info-box uagb-block-ea1e98f0 uagb-infobox__content-wrap  uagb-infobox-icon-above-title uagb-infobox-image-valign-top"><div class="uagb-ifb-content"><div class="uagb-ifb-title-wrap"><h3 class="uagb-ifb-title-prefix">Welcome to</h3><div class="uagb-ifb-separator"></div><h1 class="uagb-ifb-title">Wasatch Parc<br>Snow Tubing<gwmw style="display:none;"><gwmw style="display:none;"></gwmw></gwmw></h1></div><div class="uagb-ifb-button-wrapper wp-block-button"><a href="#book" class="uagb-infobox-cta-link wp-block-button__link" target="_self" rel="noopener noreferrer" onclick="return true;"><span class="uagb-inline-editing">BOOK NOW</span></a></div></div></div>
-</div></div>
-
-
-
-<div class="wp-block-uagb-container uagb-layout-grid uagb-block-6f3d1c23 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap">
-<div class="wp-block-uagb-image alignleft uagb-block-30761a03 wp-block-uagb-image--layout-default wp-block-uagb-image--effect-static wp-block-uagb-image--align-left"><figure class="wp-block-uagb-image__figure"><img decoding="async" srcset="/wp-content/uploads/2018/11/quote-1.png ,/wp-content/uploads/2018/11/quote-1.png 780w, /wp-content/uploads/2018/11/quote-1.png 360w" sizes="auto, (max-width: 480px) 150px" src="/wp-content/uploads/2018/11/quote-1.png" alt="" class="uag-image-893" width="94" height="72" title="quote" loading="lazy" role="img"/></figure></div>
-
-
-
-<div class="wp-block-uagb-testimonial uagb-slick-carousel uagb-tm__arrow-outside uagb-block-5f7b5c65 uagb-post__carousel_notset uagb-post__carousel_notset-tablet uagb-post__carousel_notset-mobile"><div class="is-carousel uagb-tm__columns-1 uagb-tm__items"><div class="uagb-testimonial__wrap  uagb-tm__imgicon-style-circle uagb-tm__image-position-bottom uagb-tm__bg-type-none "><div class="uagb-tm__content"><div class="uagb-tm__overlay"></div><div class="uagb-tm__text-wrap"><div class="uagb-tm__desc">Great friendly and helpful staff. We enjoyed the twist and turns snow Tubing. Very relaxing and super fun!</div><div class="uagb-tm__meta-inner"><div class="uagb-testimonial-details"><span class="uagb-tm__author-name">&#8211; Channyra T</span><span class="uagb-tm__company">Company Name</span></div></div></div></div></div></div></div>
-</div></div>
-
-
-
-<div class="wp-block-uagb-container uagb-block-4e5b41fa alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap">
-<div class="wp-block-uagb-advanced-heading uagb-block-ed3416f6"><h2 class="uagb-heading-text">Wasatch Parc on TV</h2><div class="uagb-separator"></div></div>
-
-
-
-<div class="wp-block-uagb-container uagb-block-0c24c3bb">
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<div class="ast-oembed-container " style="height: 100%;"><iframe title="Wasatch Parc snow tubing on Channel 2" width="1200" height="900" src="https://www.youtube.com/embed/Gc64D3fLJ3A?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-</div></figure>
-</div>
-</div></div>
-
-
-
-<div class="wp-block-uagb-advanced-heading uagb-block-11a04bdb"><h2 class="uagb-heading-text">PRICES</h2><div class="uagb-separator"></div></div>
-
-
-
-<p></p>
-
-
-
-<div class="wp-block-uagb-container uagb-block-0127aa57 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap">
-<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex" style="margin-bottom:0">
-<div class="wp-block-column has-text-color has-background has-link-color wp-elements-27ebd2160c246fe6a741eb96576c2f17 is-layout-flow wp-block-column-is-layout-flow" style="color:#000000;background-color:#0045ae;padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em">
-<h2 class="wp-block-heading has-ast-global-color-5-color has-text-color has-link-color wp-elements-c15d1dbf429b515fde4a0061a649d043" id="single" style="font-size:40px"><strong>Single</strong> ride</h2>
-
-
-
-<p class="has-ast-global-color-5-color has-text-color has-link-color has-normal-font-size wp-elements-5f4225eeec0df1e6a38e17ce357d5e60" style="line-height:1.5"><strong>Not available for online booking</strong></p>
-
-
-
-<hr class="wp-block-separator has-text-color has-white-color has-alpha-channel-opacity has-white-background-color has-background is-style-wide"/>
-
-
-
-<div class="wp-block-buttons alignfull is-horizontal is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex">
-<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size has-medium-font-size"><a class="wp-block-button__link has-white-color has-ast-global-color-0-background-color has-text-color has-background no-border-radius wp-element-button" href="https://fareharbor.com/embeds/book/wasatchparc/?full-items=yes" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">$15 / ticket</a></div>
-</div>
-</div>
-
-
-
-<div class="wp-block-column has-ast-global-color-5-background-color has-text-color has-background has-link-color wp-elements-aa9ff5128ef5b9a1a472cf33bb8138ab is-layout-flow wp-block-column-is-layout-flow" style="color:#000000;padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em">
-<h2 class="wp-block-heading has-text-align-left has-ast-global-color-0-color has-text-color has-link-color wp-elements-f5ef5b30c4e8eb52173442348cb6a951" id="family" style="font-size:40px"><strong>2 hour</strong>s</h2>
-
-
-
-<p class="has-ast-global-color-0-color has-text-color has-link-color has-normal-font-size wp-elements-218ec3a79ba2baf58d310ad2dfd8275e" style="line-height:1.5"><strong>Get more than 10 rides !</strong></p>
-
-
-
-<hr class="wp-block-separator has-text-color has-ast-global-color-1-color has-alpha-channel-opacity has-ast-global-color-1-background-color has-background is-style-wide"/>
-
-
-
-<div class="wp-block-buttons alignfull is-horizontal is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-2 wp-block-buttons-is-layout-flex">
-<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-fill has-medium-font-size"><a class="wp-block-button__link has-white-color has-ast-global-color-1-background-color has-text-color has-background no-border-radius wp-element-button" href="https://fareharbor.com/embeds/book/wasatchparc/?full-items=yes" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">$33 / ticket</a></div>
-</div>
-</div>
-
-
-
-<div class="wp-block-column has-text-color has-background has-link-color wp-elements-80793fdb23643f00af2b9f94875d35bc is-layout-flow wp-block-column-is-layout-flow" style="color:#000000;background-color:#0045ae;padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em">
-<h2 class="wp-block-heading has-ast-global-color-5-color has-text-color has-link-color wp-elements-644516ccb3734fdea69f5f0ebaff11e9" id="patron" style="font-size:40px"><strong>4 hour</strong>s</h2>
-
-
-
-<p class="has-ast-global-color-5-color has-text-color has-link-color has-normal-font-size wp-elements-1f2e90249b16bc6218048b083e933287"><strong>Half day of fun</strong></p>
-
-
-
-<hr class="wp-block-separator has-text-color has-ast-global-color-5-color has-alpha-channel-opacity has-ast-global-color-5-background-color has-background is-style-wide"/>
-
-
-
-<div class="wp-block-buttons alignfull is-horizontal is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3 wp-block-buttons-is-layout-flex">
-<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size has-medium-font-size"><a class="wp-block-button__link has-white-color has-ast-global-color-0-background-color has-text-color has-background no-border-radius wp-element-button" href="https://fareharbor.com/embeds/book/wasatchparc/?full-items=yes" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">$60 / ticket</a></div>
-</div>
-</div>
-</div>
-</div></div>
-
-
-
-<p></p>
-
-
-
-<div class="wp-block-uagb-advanced-heading uagb-block-64dcf51c" id="book"><h2 class="uagb-heading-text">BOOK NOW</h2><div class="uagb-separator"></div></div>
-
-
-
-<p></p>
-
-
-
-<div class="wp-block-uagb-container uagb-block-93142989 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"></div></div>
-
-
-
-<div class="wp-block-uagb-container uagb-block-a1544061 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"><script src="https://fareharbor.com/embeds/script/items/wasatchparc/?fallback=simple&full-items=yes&flow=5518"></script>
-
-
-
-<div class="wp-block-uagb-container uagb-block-a52b1b21"></div>
-</div></div>
-
-
-
-<div class="wp-block-uagb-container uagb-block-4c431110 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap">
-<div class="wp-block-uagb-container uagb-block-979a37db">
-<p class="has-text-align-center"><strong>Please choose if you would like to book a tubing session, or purchase gift certificates.</strong></p>
-</div>
-
-
-
-<div class="wp-block-uagb-container uagb-block-3a61e725">
-<p class="has-text-align-center"><strong><u>Gift Certificates are not a valid tubing ticket</u> and must be redeemed online to reserve a session at Wasatch Parc.</strong></p>
-</div>
-</div></div>
-
-
-
-<p></p>
-
-	
-	
-</div><!-- .entry-content .clear -->
-
-	
-	
-</article><!-- #post-## -->
-
-			</main><!-- #main -->
-			
-		
+<section class="m-photo m-accueil-hero">
+	<div class="m-conteneur m-hero-contenu">
+		<p class="m-pastille">Ogden Valley · Eden, Utah</p>
+		<h1>The only snow tubing in Utah with banked turns.</h1>
+		<p class="m-hero-texte">Grab a tube, ride the twists and turns, and enjoy the snow and the mountains of Ogden Valley with family and friends.</p>
+		<div class="m-boutons">
+			<a class="m-bouton m-bouton-principal" href="<?= LIEN_RESERVATION ?>">Book a session</a>
+			<a class="m-bouton m-bouton-blanc" href="#prices">See prices</a>
+		</div>
+	</div>
+</section>
+
+<section class="m-atouts" aria-label="Highlights">
+	<div class="m-conteneur">
+		<div class="m-atouts-grille">
+			<div class="m-atout">
+				<span class="m-icone" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c4 0 4-6 9-6s5 6 9 6"/><path d="M3 21h18"/></svg></span>
+				<div><h3>Banked turns</h3><p>A tubing hill with twists, not just a straight slope.</p></div>
+			</div>
+			<div class="m-atout">
+				<span class="m-icone" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+				<div><h3>Open 11am – 5pm</h3><p>Sundays 10am – 4pm. Book your session online.</p></div>
+			</div>
+			<div class="m-atout">
+				<span class="m-icone" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M15 15.5c.6-.3 1.3-.5 2-.5 2.8 0 4 2 4 5"/></svg></span>
+				<div><h3>Family special</h3><p>Families of 5 get one more rider for free.</p></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="m-section" id="prices" aria-labelledby="titre-tarifs">
+	<div class="m-conteneur">
+		<div class="m-tarifs-entete">
+			<div><p class="m-surtitre">Prices</p><h2 class="m-titre-section" id="titre-tarifs">Pick your session</h2></div>
+			<p class="m-intro">Choose a single ride at the hill, or book a 2 or 4 hour session online.</p>
+		</div>
+		<div class="m-tarifs">
+			<div class="m-tarif">
+				<div><h3>Single ride</h3><p class="m-tarif-detail">One run down the hill</p></div>
+				<p class="m-prix">$15<span> / ticket</span></p>
+				<p class="m-tarif-note">Not available for online booking</p>
+			</div>
+			<div class="m-tarif m-tarif-fonce">
+				<div><h3>2 hours</h3><p class="m-tarif-detail">Get more than 10 rides!</p></div>
+				<p class="m-prix">$33<span> / ticket</span></p>
+				<a class="m-bouton m-bouton-principal m-bouton-moyen m-bouton-plein" href="<?= LIEN_RESERVATION ?>">Book 2 hours</a>
+			</div>
+			<div class="m-tarif">
+				<div><h3>4 hours</h3><p class="m-tarif-detail">Half day of fun</p></div>
+				<p class="m-prix">$60<span> / ticket</span></p>
+				<a class="m-bouton m-bouton-clair m-bouton-moyen m-bouton-plein" href="<?= LIEN_RESERVATION ?>">Book 4 hours</a>
+			</div>
+		</div>
+		<p class="m-cadeaux">Gift certificates are available too. They are not a tubing ticket: redeem them online to reserve a session at Wasatch Parc. <a href="<?= LIEN_CARTES_CADEAUX ?>"><strong>Buy a gift certificate</strong></a></p>
+	</div>
+</section>
+
+<section class="m-section m-section-fond" aria-labelledby="titre-regles">
+	<div class="m-conteneur">
+		<p class="m-surtitre">Before you come</p>
+		<h2 class="m-titre-section" id="titre-regles">Good to know</h2>
+		<div class="m-cartes">
+			<div class="m-carte">
+				<img src="/wp-content/uploads/2024/12/kids-tall.jpeg" width="320" height="320" alt="" loading="lazy">
+				<div class="m-carte-texte"><h3>Height requirement</h3><p>Kids must be at least 42” tall. No lap or double riding.</p></div>
+			</div>
+			<div class="m-carte">
+				<img src="/wp-content/uploads/2024/12/kid-tubing-helmet.jpeg" width="320" height="320" alt="" loading="lazy">
+				<div class="m-carte-texte"><h3>Helmets</h3><p>Wasatch Parc doesn't provide helmets. You can ride without one, but wearing one is strongly advised.</p></div>
+			</div>
+			<div class="m-carte">
+				<img src="/wp-content/uploads/2024/12/waiver.jpeg" width="320" height="320" alt="" loading="lazy">
+				<div class="m-carte-texte"><h3>Release of liability</h3><p>Everyone signs a waiver before riding. <a href="/wp-content/uploads/2024/12/Liability-waiver.pdf" target="_blank" rel="noopener"><strong>Download it</strong></a> to save time.</p></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="m-section m-photo m-bande-groupes m-groupes" aria-labelledby="titre-groupes">
+	<div class="m-conteneur">
+		<p class="m-surtitre">Groups &amp; families</p>
+		<h2 class="m-titre-section" id="titre-groupes">Bring the whole crew</h2>
+		<div class="m-offres">
+			<div class="m-offre"><p class="m-offre-chiffre">+1 free</p><h3>Family special</h3><p>Families of 5 get one more for free (10 people max). Not available for online booking.</p></div>
+			<div class="m-offre"><p class="m-offre-chiffre">20% off</p><h3>Groups of 20+</h3><p>One single online payment. Our team assists you by email or phone.</p></div>
+			<div class="m-offre"><p class="m-offre-chiffre">Up to 50</p><h3>Private session</h3><p>Up to 50 people at the same time on the tubing hill. Call or email us for a quote.</p></div>
+		</div>
+		<p class="m-groupes-note">Group bookings and private sessions are not available during peak periods and weekends. <a href="/contact/">Contact us</a></p>
+	</div>
+</section>
+
+<section class="m-section" aria-label="Review and TV report">
+	<div class="m-conteneur m-deux-colonnes">
+		<figure class="m-avis">
+			<svg aria-hidden="true" width="56" height="44" viewBox="0 0 56 44" fill="#B3DCFF"><path d="M0 44V26C0 11 8 2 22 0l2 6C15 9 11 15 11 22h11v22H0Zm32 0V26C32 11 40 2 54 0l2 6c-9 3-13 9-13 16h11v22H32Z"/></svg>
+			<blockquote>Great friendly and helpful staff. We enjoyed the twist and turns snow tubing. Very relaxing and super fun!</blockquote>
+			<figcaption>— Channyra T.</figcaption>
+		</figure>
+		<div>
+			<div class="m-video">
+				<a href="https://www.youtube.com/watch?v=Gc64D3fLJ3A" data-youtube="Gc64D3fLJ3A" aria-label="Wasatch Parc snow tubing on Channel 2">
+					<img src="/wp-content/uploads/2024/12/home-snow-tubing.jpg" alt="" loading="lazy">
+					<span class="m-video-lecture" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="#0B1B33"><path d="M8 5v14l11-7z"/></svg></span>
+				</a>
+			</div>
+			<p class="m-video-legende">Wasatch Parc on TV <span>· Channel 2 report</span></p>
+		</div>
+	</div>
+</section>
+
+<section class="m-section m-section-fond" id="visit" aria-labelledby="titre-venir">
+	<div class="m-conteneur m-deux-colonnes">
+		<div>
+			<p class="m-surtitre">Plan your visit</p>
+			<h2 class="m-titre-section" id="titre-venir">Find us in Eden, Utah</h2>
+			<div class="m-infos">
+				<div><h3>Address</h3><p>3567 Nordic Valley Way<br>Eden, UT 84310</p></div>
+				<div><h3>Phone</h3><p><a href="tel:+18003919954"><strong>800-391-9954</strong></a></p></div>
+				<div><h3>Hours</h3><p>Mon, Wed, Fri, Sat: 11am – 5pm<br>Sunday: 10am – 4pm<br>Holidays: Mon–Sat 11am – 5pm</p></div>
+				<div><h3>Parking</h3><p>Please use lot P3. The small lot below the tubing hill is no longer accessible.</p></div>
+			</div>
+			<div class="m-boutons">
+				<a class="m-bouton m-bouton-principal m-bouton-moyen" href="<?= LIEN_RESERVATION ?>">Book a session</a>
+				<a class="m-bouton m-bouton-contour m-bouton-moyen" href="https://www.google.com/maps/search/?api=1&amp;query=3567+Nordic+Valley+Way%2C+Eden%2C+UT+84310" target="_blank" rel="noopener">Get directions</a>
+			</div>
+		</div>
+		<div class="m-plan"><img src="/wp-content/uploads/2024/12/plan_OK.png" width="400" height="400" alt="Map: Wasatch Parc in Ogden Valley, near Eden and Nordic Valley" loading="lazy"></div>
+	</div>
+</section>
